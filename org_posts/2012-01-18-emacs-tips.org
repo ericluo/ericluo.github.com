@@ -174,7 +174,7 @@ For this application I would suggest
 有关脚本来同步更新TAGS文件。
   
 *** NEXT 编写watchr脚本用于动态更新TAGS文件
-* Screen中使用emacsclient的方法                                        :NOTE:
+* Screen中使用emacsclient的方法
    :LOGBOOK:
    CLOCK: [2011-10-26 三 23:16]--[2011-10-26 三 23:19] =>  0:03
    :END:
