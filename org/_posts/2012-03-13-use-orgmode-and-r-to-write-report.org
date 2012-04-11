@@ -1,0 +1,15 @@
+#+BEGIN_HTML
+---
+layout: post
+title: "使用orgmode和R来撰写报告"
+date: 2012-03-13 22:25
+comments: true
+categories: 
+---
+#+END_HTML
+
+* 数据准备
+* 数据分析
+[2012-03-13 Tue 22:26]
+* 报告撰写
+[2012-03-13 Tue 22:26]
