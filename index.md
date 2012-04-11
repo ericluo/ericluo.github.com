@@ -1,7 +1,7 @@
 ---
 layout: page
-title: GTD、数据分析
-tagline: Supporting tagline
+title: 夹缝中生存的程序员
+tagline: GTD、数据分析
 ---
 <ul class="posts">
 {% for post in site.posts limit: 5 %}
