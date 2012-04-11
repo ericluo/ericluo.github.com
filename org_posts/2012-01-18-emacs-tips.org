@@ -1,3 +1,7 @@
+#+INFOJS_OPT: path:http://orgmode.org/org-info.js
+#+INFOJS_OPT: toc:nil ltoc:t view:info mouse:underline buttons:nil
+#+INFOJS_OPT: up:http://ericluo.github.com
+#+INFOJS_OPT: home:http://ericluo.github.com
 #+BEGIN_HTML
 ---
 layout: post
