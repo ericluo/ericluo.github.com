@@ -1,12 +1,16 @@
 ---
 layout: page
-title: Hello World!
+title: GTD、数据分析
 tagline: Supporting tagline
 ---
-
 <ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+{% for post in site.posts limit: 5 %}
+  <div class="post_info">
+    <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span>({{ post.date | date:"%Y-%m-%d" }})</span>
+    </li>
+    </br> <em>{{ post.excerpt }} </em>
+    </div>
   {% endfor %}
 </ul>
-
