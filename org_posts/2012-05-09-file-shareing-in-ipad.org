@@ -6,7 +6,8 @@ date       : 2012-05-09 21:53
 comments   : true
 categories : 
   - tips
-#+EDN_HTML
+---    
+#+END_HTML
 
 * =IPAD2= 中文件同步的方法
 [2012-05-10 四 00:21]
