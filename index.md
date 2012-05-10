@@ -10,7 +10,7 @@ tagline : GTD、数据分析
             <a href="{{ post.url }}">{{ post.title }}</a>
             <span>({{ post.date | date:"%Y-%m-%d" }})</span>
     </li>
-    </br> <em>{{ post.content | trancatewords:20 }} </em>
+    </br> <em>{{ post.content | truncatewords:20 }} </em>
     </div>
   {% endfor %}
 </ul>
