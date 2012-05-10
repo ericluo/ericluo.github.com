@@ -9,11 +9,11 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 在刀尖行走的蚂蚁
-tagline: Emacs GTD 育儿
-author :
-  name : Eric Luo
-  email : eric.wenbl@gmail.com
+title    : 在刀尖行走的蚂蚁
+tagline  : Emacs GTD 育儿
+author   :
+  name   : Eric Luo
+  email  : eric.wenbl@gmail.com
   github : ericluo
 
 # The production_url is only used when full-domain names are needed
