@@ -3,14 +3,28 @@ layout  : page
 title   : 夹缝中生存的程序员
 tagline : GTD、数据分析
 ---
-<ul class="posts">
-{% for post in site.posts limit: 5 %}
-  <div class="post_info">
-    <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <span>({{ post.date | date:"%Y-%m-%d" }})</span>
-    </li>
-    </br> <em>{{ post.content | strip_html | truncatewords: 2 }} </em>
+<div class="posts">
+  {% for post in site.posts limit: 5 %}
+  <div>
+    <p class="excerpt">     
+      <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> 
+      <span class="post-date" >
+        Posted on     
+      </span>        
+    </p>
+    <div class="excerpt-post">
+      {% if post.description %} 
+      <p>{{ post.description }}</p>
+      {% else %}
+      <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+      <p style="text-align:right">
+        <span class="more">
+          <a  href="{{site.baseurl}}{{ post.url }}">阅读全文...</a>
+        </span>
+      </p>
     </div>
+  </div>
   {% endfor %}
-</ul>
+  <center><a href="{{ site.baseurl }}/archives">文章列表</a></center>
+</div>
