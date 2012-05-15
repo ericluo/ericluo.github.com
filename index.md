@@ -26,5 +26,5 @@ tagline : GTD、数据分析
     </div>
   </div>
   {% endfor %}
-  <center><a href="{{ site.baseurl }}/archives">文章列表</a></center>
+  <center><h2><a href="{{ site.baseurl }}/archive.html">文章列表</a></h2></center>
 </div>
