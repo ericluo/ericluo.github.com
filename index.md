@@ -14,7 +14,7 @@ tagline : GTD、数据分析
           </div>
           <div class="span7">
             <h2><a class="post-title" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h2>
-            {{ post.content | strip_html | truncatewords: 30 }}
+            {{ post.content }}
             <a href="{{site.baseurl}}{{ post.url }}">评论</a>
             <hr>
             <br/><br/>
