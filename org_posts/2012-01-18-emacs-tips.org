@@ -1,0 +1,195 @@
+#+INFOJS_OPT: path:http://orgmode.org/org-info.js
+#+INFOJS_OPT: toc:nil ltoc:t view:info mouse:underline buttons:nil
+#+INFOJS_OPT: up:http://ericluo.github.com
+#+INFOJS_OPT: home:http://ericluo.github.com
+#+BEGIN_HTML
+---
+layout:      post
+title:       Emacs小技巧
+date:        2012-01-18 12:45
+excerpt:     有关Emacs的使用技巧，快捷键等资料
+comments:    true
+categories:  
+  - Emacs
+  - Gnus
+  - Orgmode
+---
+#+END_HTML
+
+* Emacs使用技巧
+* 安装并配置.emacs.d的方法
+CLOSED: [2011-10-04 二 20:46]
+
+Emacs Starter Kit安装步骤
+- git clone下来我的.emacs.d文件
+- git clone rinari到~/workspace/下
+- git clone orgmode到~/workspace/下
+- 下载并安装ess,并执行make && make install
+* Paredit使用技巧
+
+如果需要删除不匹配的"或(,)的时候，通过C-u, DEL来删除",通过C-q (,或C-q )来进行删除或处理。
+* Mark Ring使用
+   
+在buffer之内Emacs会默认保留16个跳转Mark，在Mark之间进行跳转时使用C-u M-@来进行设置。通过设置`set-mark-command-repeat-pop'为non-nil,可以在第一次使用C-u M-@跳转后，接着使用M-@来进行跳转。
+* Magit
+
+   [[http://zagadka.vim.bytemark.co.uk/magit/magit.html][Magit User Manual]]
+* Fold
+
+在使用fold-dwim来作fold的时候，需要打开hs-minor-mode，outline-minor-mode，或folding-mode。可以通过3个通用的命令来进行folding。分别为fold-dwim-toggle， fold-dwim-hide-all，fold-dwim-show-all。
+* Flyspell
+
+要正确地使用Flyspell功能，需要在系统中安装aspell和aspell-dict-en或其他的库程序。
+* Misc Tips
+
+- 当使用completion的时候，用M-v可以跳入completion list buffer，然后就可以在completion list buffer中选择对应的选项了。
+
+- 当terminal支持的颜色为16种或更少时，可以通过如下设置来设置terminal的类型。
+   
+  #+BEGIN_src sh
+    export TERM=xterm-256color;emacs -nw
+  #+END_src
+
+  可以通过M-x list-colors-display来查看当前支持的颜色数量。
+ 
+- 保存窗口配置信息并恢复的方法
+  可以通过 =C-x r w RET SYMBOL RET= 来保存当前窗口的配置信息到 =SYMBOL=，进行其他操作改变窗口设置后，可以通过 =C-x r j SYMBOL= 来恢复原来的窗口设置信息。该方法在保存编译或调试窗口设置信息时较为高效。
+* Gnus
+** 快捷键使用
+| Mode    | Key       | Comment                                 |
+|---------+-----------+-----------------------------------------|
+| Group   | AA        | 列出所有新闻组                          |
+|         | u         | 订阅新闻组                              |
+|         | L         | 显示订阅新闻组                          |
+|         | l         | 显示有未读邮件或新闻的组                |
+|         | u         | 退订新闻组，并未删除。L命令可以显示出来 |
+|         | C-k       | 彻底删除                                |
+|         | g         | 查看新邮件或消息                        |
+|         | c         | 当前新闻组标记为已读                    |
+|         | C         | 所有新闻组标记为已读                    |
+|         | m         | 创建新邮件                              |
+|         | a         | 发帖子                                  |
+| Summary | a         | 发帖子(post article)                    |
+|         | f         | 回帖子(follow up)                       |
+|         | F         | 回帖子，含引用                          |
+|         | d         | 标记为已读                              |
+|         | ！        | 保留标记(ticked)，一直可见              |
+|         | ?         | 休眠标记(dormant)，跟贴后可见           |
+|         | r         | 回邮件                                  |
+|         | R         | 回邮件，含引用                          |
+|         | c         | 标记当前所有文章已读                    |
+|         | M-g       | 刷新邮件组或新闻组                      |
+|         | M-u       | 清除标记                                |
+|         | SPC       | Article Buffer翻页                      |
+|         | Backspace | Article Buffer向上翻页                  |
+|         | / o       | 显示旧消                                |
+|         | / a       | 查询给定作者消息                        |
+|         | C-u / a   | 反向查询                                |
+|         | / /       | 根据主题查询                            |
+|         | / x       | 根据邮件头查询                          |
+|         | / t       | 根据时间查询                            |
+|         | / w       | remove previous query limit             |
+|         | C-u / w   | remove all query limit                  |
+|         | M-s       | 查询Article Buffer的内容                |
+|         | M-r       | 向前查询Article Buffer内容              |
+| Article | C-c C-c   | 发送                                    |
+|         | C-c C-d   | 保存为草稿                              |
+|         | C-c C-k   | 删除                                    |
+|         | C-c C-m f | 粘贴附件                                |
+|         | M-q       | 重排段落                                |
+
+
+其他有关配置信息参见sachachua的文章[fn:1]
+* Key Bindings
+
+| Key         | Function                       | Comment                                     |
+|-------------+--------------------------------+---------------------------------------------|
+| M-<TAB>     | complete-at-point              |                                             |
+| C-M-i       | complete-at-point              |                                             |
+| C-u C-h i   |                                | read the given info file                    |
+| C-c C-h     |                                | show keys with the prefix "C-c"             |
+| M-/         | hippie-expand                  |                                             |
+| C-M-/       | dabbrev-completion             | find and present suggestions for completion |
+| M-r         | move-to-window-line-top-bottom | positions point at center of window         |
+| C-`         | push-mark-no-activate          | push point to mark-ring without activate it |
+| M-`         | jump-to-mark                   | jump to the local mark                      |
+| C-x TAB     | ido-imenu                      |                                             |
+| C-x C-n     |                                | goal column                                 |
+| C-M-a       |                                | beginning of defun                          |
+| C-M-e       |                                | end of defun                                |
+| M-g M-n     |                                | next error                                  |
+| M-g M-p     |                                | previous error                              |
+| C-u M-g M-g |                                | execute goto-line in the previous buffer    |
+* Org Mode
+   
+| key     | Command      | Comment          |
+|---------+--------------+------------------|
+| C-M-i   | org-complete | C-i equal to TAB |
+| ESC-TAB | org-complete | ESC equal to M   |
+
+   
+** Orgtbl mode
+  
+Email from Michael Brand: Re: Row formula in orgtbl mode]]
+Row formulas are not supported, but the new range formulas you already
+tried are even more powerful:
+  
+Your range formula @4$2..@4$5=@-1*@-2 will work if you upgrade at
+least to this commitdiff
+http://orgmode.org/w/?p=org-mode.git;a=commitdiff;h=8237c9ae6d587a22646333e0315683675e2db538
+and will deliver
+
+|               |    a |    b |    c |    d |
+| Specific cost |    1 |    9 |    2 |    3 |
+| System size   | 1000 | 1000 | 1000 | 1000 |
+|               | 1000 | 9000 | 2000 | 3000 |
+| ...           |  ... |  ... |  ... |  ... |
+#+TBLFM: @4$2..@4$5=@-1*@-2
+
+For this application I would suggest
+#+TBLFM: @4$<<..@4$>=@-1*@-2
+  
+** clock history
+
+跳转到clock历史记录的方法为 =C-u C-c C-x C-j=, 如果在agenda mode中，还
+可以通过 =J= 来进行跳转。
+
+** 如何利用norang中关于orgmode的设置                                  :NOTE:
+   :LOGBOOK:
+   CLOCK: [2011-10-23 日 16:08]--[2011-10-23 日 16:18] =>  0:10
+   :END:
+  [2011-10-23 日 16:08]
+  [[file:~/workspace/org-mode-doc/org-mode.org]]
+
+  =norang= 中的 =orgmode= 设置非常详细，每次参考其 =orgmode= 的相关设置
+  需要作大的改变。因为在其关于 =orgmode= 设置的文档中，所有的设置均可以
+  通过 =tangle(org-babel-tangle)= 导出为配置文件，在自己的=orgmode= 的
+  配置文件中通过引用 =norang= 的配置文件实现对其配置信息的引用。
+* Tags
+** 在Emacs中正确使用Ruby的tags的方法
+- 使用bundle install --path vendor将gems安装到本地项目目录下
+- 执行如下命令来生产ruby文件的tag
+    
+#+begin_src sh
+  ctags -e -f TAGS --tag-relative -R app lib vendor
+#+end_src
+
+这样就可以在Emacs中使用tags了。如果项目有变化，可以通过执行 =watchr=的
+有关脚本来同步更新TAGS文件。
+  
+*** NEXT 编写watchr脚本用于动态更新TAGS文件
+* Screen中使用emacsclient的方法
+   :LOGBOOK:
+   CLOCK: [2011-10-26 三 23:16]--[2011-10-26 三 23:19] =>  0:03
+   :END:
+[2011-10-26 三 23:16]
+[[file:~/.emacs.d/ericluo.el::(server-start)]]
+
+Emacs23以后的版本可以支持multi-term，在bash中可以通过emacsclient -t来
+直接在terminal中运行emacsclient。
+
+#+begin_src sh
+  export EDITOR="emacsclient -t"
+#+end_src
+* Footnotes
+[fn:1] http://sachachua.com/notebook/wickedcool/wc-emacs-06-gnus.html

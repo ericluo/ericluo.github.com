@@ -1,0 +1,18 @@
+#+BEGIN_HTML
+---
+layout     : post
+title      : IPAD使用小窍门
+date       : 2012-05-09 21:53
+tags       :
+  - tips
+  - IPAD
+comments   : true
+categories : 
+  - tips
+---    
+#+END_HTML
+
+* IPAD2中文件同步的方法
+[2012-05-10 四 00:21]
+
+今天使用 =zaTelnet= 过程中需要将 =keyfile= 文件上传到IPAD中，但是怎么将Mac中的文件同步到过去了， =google= 摸索了好久，最后发现在 =iTunes= 中有个专门的*文件共享*功能,可以在支持该功能的应用程序内进行文件同步。Apple的这个功能做的也太隐蔽了。

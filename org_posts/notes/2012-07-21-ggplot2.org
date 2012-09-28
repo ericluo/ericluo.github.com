@@ -1,0 +1,84 @@
+#+INFOJS_OPT: path:http://orgmode.org/org-info.js
+#+INFOJS_OPT: toc:nil ltoc:t view:info mouse:underline buttons:nil
+#+INFOJS_OPT: up:http://ericluo.github.com
+#+INFOJS_OPT: home:http://ericluo.github.com
+#+BEGIN_HTML
+---
+layout:      post
+title:       ggplot2
+excerpt:     
+comments:    true
+categories:  
+  - R
+---
+#+END_HTML
+* 疑难杂症
+
+在 *Mac OSX* 下的 *Emacs* 中，如果Emacs不是从Terminal下启动的，就没有读取.bashrc或.zshrc中的配置信息，这样在Emacs中使用R时就会有中文问题。而且在R中作图时，不管是用内置的作图函数还是ggplot2中的作图函数，对会发生中文显示为方框的问题，其可以通过设置作图时使用的字体来解决。参见[[id:AB041981-B4A7-4F32-82A5-E0FAA1D6E810][R在作图中中文的使用]]
+
+* 什么是 =Grammer of Graphics=
+[2012-07-20 五 09:10]
+
+=Grammer of Graphics= 提供了一组正交的作图组件，这些组件可以通过不同的方式组装到一起，并且可以采用迭代式方法来作图。使用这些作图组件不仅灵活，而且简单。 
+
+- data    :: 数据
+- mapping :: 映射，即将原始数据映射到图形属性，如x,y的值，颜色取值等。
+- geoms   :: 几何对象，如点、线、多边形等
+- scale   :: 标度，负责映射后图形属性的显示方式，如图例和坐标刻度，将数据单位转化为图形单位。其通过图例反映数据，及从图形到数据的反向映射
+- stats   :: 统计变换，如对二元散点图上拟合出一条回归线
+- coord   :: 坐标系，如卡迪尔坐标系
+- facet   :: 分面，将数据按某种方式分组，然后分别绘图，分面就是控制分组的方法和图形的排列形式
+- layer   :: 图层，将数据、映射、几何对象、统计变换等构成一个图层。图层允许用户逐步构建图形，并对单个图层进行修改。
+ 
+* *ggplot2* 与其他的作图方法相比，主要的优点有哪些
+:PROPERTIES:
+:ID: 3151911e-46e8-4f3b-a659-bd38cad796d3
+:END:
+[2012-07-23 一 09:10]
+
+*ggplot2* 按图层进行构图，并将构图过程尽可能地与人的思维过程相一致，如第一层显示原始的数据，然后逐层向上添加备注信息或统计图表。
+
+*ggplot2* 作图系统中，图形使用一个R的 *list* 数据结构，并包含有 =data,mapping,layers,scales,coordinates,facet,options= 等组件，基本上与 =Grammer of Graphics= 是一一对应的关系。
+
+
+* =ggplot2= 作图的主要步骤是什么
+[2012-07-20 五 09:12]
+
+* TODO 学习R中的 =ggplot2= 绘图包                                   :reading:
+:LOGBOOK:
+CLOCK: [2012-07-23 一 09:38]--[2012-07-23 一 10:40] =>  1:02
+CLOCK: [2012-07-20 五 09:07]--[2012-07-20 五 10:08] =>  1:01
+CLOCK: [2012-06-21 四 11:26]--[2012-06-21 四 12:43] =>  1:17
+CLOCK: [2012-06-04 一 08:58]--[2012-06-04 一 08:59] =>  0:01
+:END:
+[2012-06-04 一 08:58]
+
+** DONE 学习第四章 Build a plot layer by layer
+CLOSED: [2012-07-24 二 10:42]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2012-07-24 二 10:42]
+CLOCK: [2012-07-24 二 10:20]--[2012-07-24 二 10:42] =>  0:22
+CLOCK: [2012-07-23 一 21:30]--[2012-07-23 一 22:55] =>  1:25
+CLOCK: [2012-07-23 一 17:18]--[2012-07-23 一 18:26] =>  1:08
+:END:
+[2012-07-23 一 10:49]
+
+[[file:~/workspace/ericluo.github.com/org_posts/notes/2012-07-21-ggplot2.org][ggplot2读书笔记]]
+
+** NEXT 学习第五章 Toolbox
+:LOGBOOK:
+CLOCK: [2012-07-25 三 16:06]--[2012-07-25 三 16:49] =>  0:43
+CLOCK: [2012-07-25 三 12:52]--[2012-07-25 三 16:06] =>  3:14
+:END:
+[2012-07-24 二 10:43]
+
+** 第六章 Scales,axes and legends
+[2012-07-24 二 11:49]
+** 第七章 Positioning
+[2012-07-24 二 11:50]
+** 第八章 Polishing your plots for publication
+[2012-07-24 二 11:50]
+** 第九章 Manipulating data
+[2012-07-24 二 11:51]
+** 第十章 Reducing duplication
+[2012-07-24 二 11:51]
