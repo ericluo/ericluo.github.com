@@ -1,0 +1,85 @@
+---
+layout:      post
+title:       openintro statistics
+excerpt:     
+comments:    true
+categories:  
+  - R openintro
+---
+
+<p>
+统计学可以分为 <span style="text-decoration:underline;">描述性统计学(description of statistics)</span> 和 <span style="text-decoration:underline;">推断性统计学(statistics inference)</span> 。推断统计学使用 <span style="text-decoration:underline;">方差分析检验(ANOVA)</span> ，_卡方检验(Chi-square test)_ ，_多元线性回归分析(multiple regression)_ ，_逻辑回归分析(logistic regression)_ 。
+</p>
+<p>
+一般性研究过程可以分为以下几个阶段
+</p>
+<ol>
+<li>识别或提出问题
+</li>
+<li>收集数据
+</li>
+<li>分析数据
+</li>
+<li>得出结论
+</li>
+</ol>
+
+
+<p>   
+统计学研究步骤2~4，即如何收集数据，采取哪些风险方法，能够得出什么结论。
+</p>
+<ul>
+<li>scatterplot
+
+<p>  
+  显示观测对象中的每一对变量，用于分析两个变量之间的关系。
+</p>
+
+
+
+<pre class="src src-R"><span style="color: #bfebbf;">library</span>(<span style="color: #cc9393;">'openintro'</span>)
+<span style="color: #bfebbf;">library</span>(<span style="color: #cc9393;">'ggplot2'</span>)
+ggplot(cars, aes(x=weight, y=price)) + geom_point()
+</pre>
+
+
+</li>
+<li>dot plot
+
+<p>  
+  与 <span style="text-decoration:underline;">scatterplot</span> 不同之处在于显示所有观测对象的一个变量。
+</p>
+
+
+
+<pre class="src src-R"><span style="color: #bfebbf;">library</span>(<span style="color: #cc9393;">'openintro'</span>)
+<span style="color: #bfebbf;">library</span>(<span style="color: #cc9393;">'ggplot2'</span>)
+ggplot(email50, aes(x=num_char)) + geom_dotplot()
+</pre>
+
+</li>
+</ul>
+
+
+
+<ul>
+<li>histogram
+
+
+
+
+<pre class="src src-R"><span style="color: #bfebbf;">library</span>(<span style="color: #cc9393;">'openintro'</span>)
+<span style="color: #bfebbf;">library</span>(<span style="color: #cc9393;">'ggplot2'</span>)
+ggplot(emailjavascript:void(0);  7 nk, aes(x=log(num_char))) + geom_histogram()
+</pre>
+
+</li>
+</ul>
+
+
+
+<ul>
+<li>box plot
+</li>
+</ul>
+

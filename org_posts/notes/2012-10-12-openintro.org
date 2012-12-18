@@ -1,0 +1,66 @@
+#+INFOJS_OPT: path:http://orgmode.org/org-info.js
+#+INFOJS_OPT: toc:nil ltoc:t view:info mouse:underline buttons:nil
+#+INFOJS_OPT: up:http://ericluo.github.com
+#+INFOJS_OPT: home:http://ericluo.github.com
+#+BEGIN_HTML
+---
+layout:      post
+title:       openintro statistics
+excerpt:     
+comments:    true
+categories:  
+  - R openintro
+---
+#+END_HTML
+
+统计学可以分为 _描述性统计学(description of statistics)_ 和 _推断性统计学(statistics inference)_ 。推断统计学使用 _方差分析检验(ANOVA)_ ，_卡方检验(Chi-square test)_ ，_多元线性回归分析(multiple regression)_ ，_逻辑回归分析(logistic regression)_ 。
+
+一般性研究过程可以分为以下几个阶段
+
+1. 识别或提出问题
+2. 收集数据
+3. 分析数据
+4. 得出结论
+   
+统计学研究步骤2~4，即如何收集数据，采取哪些风险方法，能够得出什么结论。
+
+- scatterplot
+  
+  显示观测对象中的每一对变量，用于分析两个变量之间的关系。
+  
+  #+BEGIN_SRC R :results output graphics :file cars.png :width 400 :height 300
+    library('openintro')
+    library('ggplot2')
+    ggplot(cars, aes(x=weight, y=price)) + geom_point()
+  #+END_SRC
+
+  #+RESULTS:
+  [[file:cars.png]]
+
+- dot plot
+  
+  与 _scatterplot_ 不同之处在于显示所有观测对象的一个变量。
+  
+  #+BEGIN_SRC R :results output graphics :file email50.png :width 400 :height 300
+    library('openintro')
+    library('ggplot2')
+    ggplot(email50, aes(x=num_char)) + geom_dotplot()
+  #+END_SRC
+
+  #+RESULTS:
+  [[file:email50.png]]
+
+  
+- histogram
+  
+  #+BEGIN_SRC R :results output graphics :file histogram.png :width 400 :height 300
+    library('openintro')
+    library('ggplot2')
+    ggplot(emailjavascript:void(0);  7 nk, aes(x=log(num_char))) + geom_histogram()
+  #+END_SRC
+
+  #+RESULTS:
+  [[file:histogram.png]]
+
+  
+- box plot
