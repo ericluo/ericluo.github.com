@@ -13,7 +13,7 @@ categories:
 ---
 #+END_HTML
 
-统计学可以分为 _描述性统计学(description of statistics)_ 和 _推断性统计学(statistics inference)_ 。推断统计学使用 _方差分析检验(ANOVA)_ ，_卡方检验(Chi-square test)_ ，_多元线性回归分析(multiple regression)_ ，_逻辑回归分析(logistic regression)_ 。
+统计学可以分为 _描述性统计学(description of statistics)_ 和 _推断性统计学(statistics inference)_ 。推断统计学使用 _方差分析检验(ANOVA)_ ， _卡方检验(Chi-square test)_ ， _多元线性回归分析(multiple regression)_ ， _逻辑回归分析(logistic regression)_ 。
 
 一般性研究过程可以分为以下几个阶段
 
@@ -28,7 +28,7 @@ categories:
   
   显示观测对象中的每一对变量，用于分析两个变量之间的关系。
   
-  #+BEGIN_SRC R :results output graphics :file cars.png :width 400 :height 300
+  #+BEGIN_SRC R :results output graphics :file cars.png :width 400 :height 300 :exports both
     library('openintro')
     library('ggplot2')
     ggplot(cars, aes(x=weight, y=price)) + geom_point()
@@ -41,7 +41,7 @@ categories:
   
   与 _scatterplot_ 不同之处在于显示所有观测对象的一个变量。
   
-  #+BEGIN_SRC R :results output graphics :file email50.png :width 400 :height 300
+  #+BEGIN_SRC R :results output graphics :file email50.png :width 400 :height 300 :exports both
     library('openintro')
     library('ggplot2')
     ggplot(email50, aes(x=num_char)) + geom_dotplot()
@@ -56,7 +56,7 @@ categories:
   #+BEGIN_SRC R :results output graphics :file histogram.png :width 400 :height 300
     library('openintro')
     library('ggplot2')
-    ggplot(emailjavascript:void(0);  7 nk, aes(x=log(num_char))) + geom_histogram()
+    ggplot(email50, aes(x=log(num_char))) + geom_histogram()
   #+END_SRC
 
   #+RESULTS:

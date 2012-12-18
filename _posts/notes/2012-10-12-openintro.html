@@ -8,7 +8,7 @@ categories:
 ---
 
 <p>
-统计学可以分为 <span style="text-decoration:underline;">描述性统计学(description of statistics)</span> 和 <span style="text-decoration:underline;">推断性统计学(statistics inference)</span> 。推断统计学使用 <span style="text-decoration:underline;">方差分析检验(ANOVA)</span> ，_卡方检验(Chi-square test)_ ，_多元线性回归分析(multiple regression)_ ，_逻辑回归分析(logistic regression)_ 。
+统计学可以分为 <span style="text-decoration:underline;">描述性统计学(description of statistics)</span> 和 <span style="text-decoration:underline;">推断性统计学(statistics inference)</span> 。推断统计学使用 <span style="text-decoration:underline;">方差分析检验(ANOVA)</span> ， <span style="text-decoration:underline;">卡方检验(Chi-square test)</span> ， <span style="text-decoration:underline;">多元线性回归分析(multiple regression)</span> ， <span style="text-decoration:underline;">逻辑回归分析(logistic regression)</span> 。
 </p>
 <p>
 一般性研究过程可以分为以下几个阶段
@@ -43,6 +43,9 @@ ggplot(cars, aes(x=weight, y=price)) + geom_point()
 </pre>
 
 
+<p>
+  <img src="cars.png"  alt="cars.png" />
+</p>
 </li>
 <li>dot plot
 
@@ -57,7 +60,10 @@ ggplot(cars, aes(x=weight, y=price)) + geom_point()
 ggplot(email50, aes(x=num_char)) + geom_dotplot()
 </pre>
 
-</li>
+
+<p>
+  <img src="email50.png"  alt="email50.png" />
+</p></li>
 </ul>
 
 
@@ -70,7 +76,7 @@ ggplot(email50, aes(x=num_char)) + geom_dotplot()
 
 <pre class="src src-R"><span style="color: #bfebbf;">library</span>(<span style="color: #cc9393;">'openintro'</span>)
 <span style="color: #bfebbf;">library</span>(<span style="color: #cc9393;">'ggplot2'</span>)
-ggplot(emailjavascript:void(0);  7 nk, aes(x=log(num_char))) + geom_histogram()
+ggplot(email50, aes(x=log(num_char))) + geom_histogram()
 </pre>
 
 </li>
