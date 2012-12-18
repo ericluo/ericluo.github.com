@@ -28,39 +28,39 @@ categories:
   
   显示观测对象中的每一对变量，用于分析两个变量之间的关系。
   
-  #+BEGIN_SRC R :results output graphics :file cars.png :width 400 :height 300 :exports both
+  #+BEGIN_SRC R :results output graphics :file ../../images/cars.png :width 400 :height 300 :exports both
     library('openintro')
     library('ggplot2')
     ggplot(cars, aes(x=weight, y=price)) + geom_point()
   #+END_SRC
 
   #+RESULTS:
-  [[file:cars.png]]
+  [[file:../../images/cars.png]]
 
 - dot plot
   
   与 _scatterplot_ 不同之处在于显示所有观测对象的一个变量。
   
-  #+BEGIN_SRC R :results output graphics :file email50.png :width 400 :height 300 :exports both
+  #+BEGIN_SRC R :results output graphics :file ../../images/email50.png :width 400 :height 300 :exports both
     library('openintro')
     library('ggplot2')
     ggplot(email50, aes(x=num_char)) + geom_dotplot()
   #+END_SRC
 
   #+RESULTS:
-  [[file:email50.png]]
+  [[file:../../images/email50.png]]
 
   
 - histogram
   
-  #+BEGIN_SRC R :results output graphics :file histogram.png :width 400 :height 300
+  #+BEGIN_SRC R :results output graphics :file ../../images/histogram.png :width 400 :height 300
     library('openintro')
     library('ggplot2')
     ggplot(email50, aes(x=log(num_char))) + geom_histogram()
   #+END_SRC
 
   #+RESULTS:
-  [[file:histogram.png]]
+  [[file:../../images/histogram.png]]
 
   
 - box plot
