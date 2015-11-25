@@ -11,7 +11,7 @@ email: 3944134@qq.com
 description: > # this means to ignore newlines until "baseurl:"
     客观平和，坚持自我
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://ericluo.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 xueqiu_username:  sailor
 github_username:  ericluo
