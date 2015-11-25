@@ -18,3 +18,11 @@ github_username:  ericluo
 
 # Build settings
 markdown: kramdown
+
+
+# Plugins
+gems:
+    - jekyll-mentions
+    - jekyll-sitemap
+
+
