@@ -25,7 +25,31 @@ body {
     font-kerning: normal;
 }
 
-
+table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    border-collapse: collapse;
+    transition: all 0.3s;
+    border: 1px solid rgba(0,0,0,0.167);
+}
+table {
+    border-collapse: collapse;
+}
+table thead>tr {
+    background-color: rgba(249,249,249,0.9);
+}
+table thead tr th {
+    border: 1px solid rgba(0,0,0,0.167);
+    border-top: 0px none;
+    border-bottom-width: 2px;
+    vertical-align: bottom;
+    padding: 8px;
+}
+table tbody tr td {
+    border: 1px solid rgba(0,0,0,0.167);
+    vertical-align: top;
+    padding: 8px;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
