@@ -21,6 +21,8 @@ title: VIM 学习笔记
 | Execute a sequence of changes    | qx{changes}q          |   @x   |    u    |      |
 |----------------------------------+-----------------------+--------+---------+------|
 
+# Modes
+
 ## Normal mode
 
 *撤销*命令的粒度由从 `normal mode` 进入 `insert mode`，然后在恢复到 `Normal mode` 决定。期间对文档变更作为一个整体 (`chunk`) 。
@@ -54,17 +56,28 @@ title: VIM 学习笔记
 
 ## Insert mode
 
-| Keystrokes        | Effect                                |
-|-------------------+---------------------------------------|
-| "<C-h>"           | Delete back one character (backspace) |
-| "<C-w>"          | Delete back one word                  |
-| "<C-u>"           | Delete back to start of line          |
-| "<C-r>{register}" | Paste text from {register}            |
-|-------------------+---------------------------------------|
-| "<Esc>"           | Switch to Normal mode                 |
-| "<C-[>"           | Switch to Normal mode                 |
-| "<C-o>"           | Switch to Insert Normal mode[^1]      |
-|-------------------+---------------------------------------|
+| Keystrokes           | Effect                                                 |
+|----------------------+--------------------------------------------------------|
+| `<C-h>`              | Delete back one character (backspace)                  |
+| `<C-w>`              | Delete back one word                                   |
+| `<C-u>`              | Delete back to start of line                           |
+| `<C-r>{register}`    | Paste text from {register}                             |
+| `<C-r>=`             | Paste return from expression register                  |
+|----------------------+--------------------------------------------------------|
+| `<C-v>{123}`         | Insert character by decimal code                       |
+| `<C-v>u{1234}`       | Insert character by hexadecimal code                   |
+| `<C-v>{nondigit}     | Insert nondigit literally                              |
+| `<C-k>{char1}{char2} | Insert character represented by {char1}{char2} digraph |
+|----------------------+--------------------------------------------------------|
+| `<Esc>`              | Switch to Normal mode                                  |
+| `<C-[>`              | Switch to Normal mode                                  |
+| `<C-o>`              | Switch to Insert Normal mode[^1]                       |
+|----------------------+--------------------------------------------------------|
+
+## Visual mode
+
+## Command-Line Mode
+
 
 
 
