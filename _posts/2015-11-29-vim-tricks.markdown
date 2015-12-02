@@ -74,10 +74,74 @@ title: VIM 学习笔记
 | `<C-o>`               | Switch to Insert Normal mode[^1]                       |
 |-----------------------+--------------------------------------------------------|
 
+[^1]: 用于在 `Insert mode` 下临时性地调用一次 `Normal mode` 命令，然后在返回 `Insert mode`。
 
 ## Visual mode
 
-## Command-Line Mode
+## Command-Line(Ex) Mode
 
+> Ex commands Strike Far and Wide
 
-[^1]: 用于在 `Insert mode` 下临时性地调用一次 `Normal mode` 命令，然后在返回 `Insert mode`。
+在该模式中可以使用类似于 `bash` 中的快捷键进行命令的编辑。主要可以使用的命令有：
+
+| Keystrokes    | Effect           |
+| ------------  | ---------------- |
+| C-u           | 撤销全行内容     |
+| C-w           | 撤销前一个单词   |
+| C-a           | 跳到行首         |
+| C-e           | 跳到行尾         |
+| C-r{register} | 插入寄存器内容   |
+| C-r C-w       | 插入当前位置单词 |
+
+### Ex Commands
+
+| Keystrokes                                    | Effect                                                                          |
+|-----------------------------------------------+---------------------------------------------------------------------------------|
+| :[range]delete [x]                            | delete lines into register x                                                    |
+| :[range]yank [x]                              | yank specified lines [into register x]                                          |
+| :[line]put [x]                                | put the text from register x after the specified line                           |
+| :[range]copy {address}                        | copy specified lines to below the line specified by {address}                   |
+| :[range]move {address}                        | move specified lines to below the line specified by {address}                   |
+| :[range]join                                  | join the specified lines                                                        |
+| :[range]normal {commands}                     | execute Normal mode {commands} with {string} on each specified line             |
+| :[range]substitute/{pattern}/{string}/[flags] | replace occurrences of {pattern} with {string} on each specified line           |
+| :[range]global/{pattern}/[cmd]                | execute the Ex command [cmd] on all specified lines where the {pattern} matches |
+|-----------------------------------------------+---------------------------------------------------------------------------------|
+
+使用 `q:` 可以进入 `Command line window` 模式。
+
+# Registers
+
+| name                | register |
+|---------------------+----------|
+| Unnamed Registers   | ""       |
+| Yank Registers      | "0       |
+| Named Registers     | "a - "z  |
+| Black Hole Register | "_       |
+| Expression register | "=       |
+| Search register     | "/       |
+| System Clipboard    | "+       |
+
+# Patterns
+
+## Substitution
+
+## Global Commands
+
+# Tools
+
+## ctags
+
+## quickfix
+
+> At any given moment, there can be only one quickfix list, but we can create as many location lists as we want.
+> Location list is bound to the currently active window, quickfix list is available throughtout Vim.
+
+* Quickfix List
+    : :make, :grep, :vimgrep use the quickfix list
+* Location List
+    : :lmake, :lgrep, :lvimgrep use the location list
+
+## grep
+
+## autocompletion
