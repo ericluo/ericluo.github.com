@@ -35,7 +35,10 @@ title: 交易笔记
 
 ### Do
 
+今天按照计划用浦发银行换民生。其他无操作。
+
 ### Check
+
 
 ### Action/Adjust
 
