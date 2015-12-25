@@ -26,6 +26,21 @@ title: VIM 学习笔记
 | Execute a sequence of changes    | qx{changes}q          |   @x   |    u    |      |
 |----------------------------------+-----------------------+--------+---------+------|
 
+# VIM应用技巧
+
+## Vim 输入法切换
+
+在插入模式的时候如果使用的是中文输入法，想回到正常模式，这时候按ESC是不管用的，因为键都让输入法捕获了。你必须先手动切换成英文输入法才能正常使用VIM的键盘命令。
+
+加入下面这两行配置，可以让你简单地按ESC就回到正常模式，而不需要手动切换为英文输入法：
+
+{% highlight vim %}
+au InsertEnter * set noimdisable
+au InsertLeave * set imdisable
+{% endhighlight %}
+
+注意：如果再进入插入模式会自动切换到正常模式之前的输入法。
+
 # Modes
 
 ## Normal mode
