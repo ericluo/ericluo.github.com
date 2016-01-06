@@ -28,6 +28,8 @@ kramdown:
     entity_output: as_char
     toc_levels: 1..4
 
+tag_page_layout: tag_page
+tag_page_dir: tag    
 
 # Plugins
 # gems:

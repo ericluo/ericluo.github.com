@@ -1,38 +1,23 @@
-<footer class="site-footer">
+<footer role="contentinfo">
 
-  <div class="wrapper">
+    <div class="grid">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+        <div class="unit one-third">
+            <h2 class="footer-heading">{{ site.title }}</h2>
+        </div>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+        <div class="unit one-third align-center">
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            |
+            <a href="http://xueqiu.com/sailor">雪球</a>
+            |
+            <a href="http://weibo.com/1769275090">微博</a>
+        </div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.xueqiu_username %}
-          <li>
-            {% include icon-xueqiu.html username=site.xueqiu_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+        <div class="unit one-third">
+            <p>{{ site.description }}</p>
+        </div>
     </div>
 
-  </div>
-
+</div>
 </footer>

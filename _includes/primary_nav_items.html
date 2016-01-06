@@ -1,0 +1,8 @@
+<ul>
+  <li class="{% if page.overview %}current{% endif %}">
+    <a href="/">Home</a>
+  </li>
+  <li class="{% if page.url contains '/backups/' %}current{% endif %}">
+    <a href="/backups/">历史资料</a>
+  </li>
+</ul>
