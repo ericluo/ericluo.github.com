@@ -42,12 +42,10 @@
 }
 
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "mixins";
 @import "normalize";
 @import "gridism";
+@import "syntax-highlighting";
 @import "font-awesome";
 @import "style";
-// @import "base";
-// @import "syntax-highlighting";
