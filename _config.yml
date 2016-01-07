@@ -20,16 +20,11 @@ cloud_url: http://7xonmk.com1.z0.glb.clouddn.com
 # Build settings
 markdown: kramdown
 
-paginate: 5
-
 kramdown:
     auto_ids: true
     footnote_nr: 1
     entity_output: as_char
     toc_levels: 1..4
-
-tag_page_layout: tag_page
-tag_page_dir: tag    
 
 # Plugins
 # gems:
