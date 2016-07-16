@@ -7,7 +7,7 @@
 
 # Site settings
 title: ericluo
-brief-intro: 投资 思考 生活
+brief-intro: 阅读、投资、思考、生活札记
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ericluo.github.io" # the base hostname & protocol for your site
 
@@ -18,7 +18,7 @@ twitter_username: ericluo
 # facebook_username: gaohaoyang.water
 github_username:  ericluo
 email: luo.wenbo@qq.com
-weibo_username: 3115521wh
+weibo_username: 1769275090
 zhihu_username: ericluo
 linkedIn_username: 
 dribbble_username: 
@@ -28,8 +28,8 @@ description_footer: 阅读、投资、思考和生活的记录与感悟
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #hygblog
-disqus_shortname: ericluo
+duoshuo_shortname: ericluo
+# disqus_shortname: ericluo
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
