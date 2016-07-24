@@ -1,7 +1,7 @@
 ---
 title: Jupyter Notebook使用笔记
 layout: post
-tags：tips
+tags: tips
 ---
 
 `Jupyter Notebook` 是一个很方便的学习、研究和文档撰写平台。通过这两天的研究，已经初步掌握了其日常的用法。通过在 `Markdown` 文档中嵌入 `Python` 的脚本，可以通过后者来生成动态的图片、表格，甚至还可以增加一些动态的交互效果。
@@ -12,7 +12,7 @@ tags：tips
 
 更好的解决方案是设置专用的 HOME 目录，并将该目录设置在 `OneDrive` 下。具体操作过程如下：
 
-1. 通过如下命令生成配置文件。
+- 通过如下命令生成配置文件。
 
 ```bash
 jupyter notebook --generate-config
@@ -20,10 +20,12 @@ jupyter notebook --generate-config
 
 该命令会在用户主目录下生成一个配置文件: ".jupyter/jupyter_notebook_config.py"
 
-2. 在该配置文件中设置文档目录, **注意设置中的双斜线**
+- 在该配置文件中设置文档目录, **注意设置中的双斜线**
 
-: c.NotebookApp.notebook_dir = u"C:\\Users\CBRC\\OneDrive\\workspace\\investment"
+```python
+c.NotebookApp.notebook_dir = u"C:\\Usersi\\CBRC\\OneDrive\\workspace\\investment"
+```
 
-3. 重启 `Jupyter`，就可以看到 HOME 目录已经更新了。
+- 重启 `Jupyter`，就可以看到 HOME 目录已经更新了。
 
 Enjoy！
