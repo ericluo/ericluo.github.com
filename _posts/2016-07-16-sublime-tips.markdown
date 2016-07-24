@@ -14,3 +14,4 @@ tags: Sublime
 - Jekyll
 - Anaconda
 - SublimeREPL
+- Markdown Extended
