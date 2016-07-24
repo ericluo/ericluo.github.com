@@ -18,13 +18,11 @@ tags：tips
 jupyter notebook --generate-config
 ```
 
-该命令会在用户主目录下生成一个配置文件 `*.jupyter/jupyter_notebook_config.py*`
+该命令会在用户主目录下生成一个配置文件: ".jupyter/jupyter_notebook_config.py"
 
-2. 在该配置文件中设置文档目录
+2. 在该配置文件中设置文档目录, **注意设置中的双斜线**
 
-:  c.NotebookApp.notebook_dir = u"C:\\Users\CBRC\\OneDrive\\workspace\\investment"
-
-**注意设置中的双斜线**
+: c.NotebookApp.notebook_dir = u"C:\\Users\CBRC\\OneDrive\\workspace\\investment"
 
 3. 重启 `Jupyter`，就可以看到 HOME 目录已经更新了。
 
