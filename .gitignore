@@ -5,3 +5,4 @@ _site
 .idea
 **/banks.xls
 **/__pycache__/
+hp.sublime-workspace
