@@ -20,3 +20,7 @@ tags: Sublime
 - SublimeREPL
 - MarkdownEditor
 - Terminal
+- Autofilename
+- Alignment
+- SublimeCodeIntel
+- 
