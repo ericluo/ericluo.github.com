@@ -6,12 +6,21 @@ tags: Sublime
 
 ## 如何在不同电脑上同步 `sublime` 的配置文件？
 
+可以通过 **git** 来在不同电脑之间同步 `sublime` 的配置文件。
+
 ## 主要插件及其设置
 
 - Package Controll
+- Vintageous 
 - GitGutter 
-- Git
+- SublimeGit
 - Jekyll
-- Anaconda
+- Anaconda:
+    太重了，放弃
 - SublimeREPL
-- Markdown Extended
+- MarkdownEditor
+- Terminal
+- Autofilename
+- Alignment
+- SublimeCodeIntel
+- 
