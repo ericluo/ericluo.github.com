@@ -4,4 +4,6 @@ _site
 .vscode
 .idea
 **/banks.xls
-**/__pycache__/
+**/__pycache__/*.*
+analysis/asset.xls
+analysis/log
