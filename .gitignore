@@ -4,5 +4,6 @@ _site
 .vscode
 .idea
 **/banks.xls
-**/__pycache__/
-hp.sublime-workspace
+**/__pycache__/*.*
+analysis/asset.xls
+analysis/log
