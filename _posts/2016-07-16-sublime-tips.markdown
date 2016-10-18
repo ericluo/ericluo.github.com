@@ -12,6 +12,7 @@ tags: Sublime
 
 - Package Controll
 - Vintageous 
+- Emmet
 - GitGutter 
 - SublimeGit
 - Jekyll
@@ -23,4 +24,5 @@ tags: Sublime
 - Autofilename
 - Alignment
 - SublimeCodeIntel
-- 
+- IMESupport:
+    用于解决输入法不能光标跟随的Bug

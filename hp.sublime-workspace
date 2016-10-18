@@ -44,6 +44,15 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "_posts/2016-07-16-sublime-tips.markdown",
+			"settings":
+			{
+				"buffer_size": 334,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
@@ -94,9 +103,13 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "new ",
+		"last_filter": "pcip",
 		"selected_items":
 		[
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
 			[
 				"new ",
 				"Jekyll: New post"
@@ -527,7 +540,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -543,8 +556,53 @@
 						"selection":
 						[
 							[
-								67,
-								67
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 6
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2016-07-16-sublime-tips.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								188
 							]
 						],
 						"settings":
@@ -563,14 +621,14 @@
 								"partial_sequence": "",
 								"register": "\"",
 								"sequence": "",
-								"xpos": 51
+								"xpos": 11
 							}
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -645,6 +703,10 @@
 		"selected_items":
 		[
 			[
+				"sublime",
+				"_posts\\2016-07-16-sublime-tips.markdown"
+			],
+			[
 				"宁波",
 				"_posts\\2016-10-13-宁波银行投资分析.markdown"
 			],
@@ -659,10 +721,6 @@
 			[
 				"literate",
 				"_posts\\2016-09-10-literate-programming-with-pweave.markdown"
-			],
-			[
-				"sublime",
-				"_posts\\2016-07-16-sublime-tips.markdown"
 			],
 			[
 				"md",
