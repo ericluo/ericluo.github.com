@@ -31,16 +31,7 @@
 			"file": "_posts/2016-10-13-宁波银行投资分析.markdown",
 			"settings":
 			{
-				"buffer_size": 677,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_posts/2016-10-17-python-tips.markdown",
-			"settings":
-			{
-				"buffer_size": 367,
+				"buffer_size": 474,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -93,14 +84,10 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "new ",
+		"height": 150.0,
+		"last_filter": "push",
 		"selected_items":
 		[
-			[
-				"new ",
-				"Jekyll: New post"
-			],
 			[
 				"push",
 				"Git: Push"
@@ -349,16 +336,6 @@
 		"height": 274.0,
 		"history":
 		[
-			"108857 - 41380",
-			"137586 / 4983253",
-			"137586 / 4983253 * 2",
-			"67477 / 5258498 * 2",
-			"67477 / 5258498",
-			"23561 / 3525154 *2",
-			"23561 / 3525154",
-			"41380 / 4861167",
-			"1391 * 2/ 89715",
-			"1391 / 89715",
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -481,7 +458,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -490,26 +467,23 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 677,
+						"buffer_size": 474,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								375,
+								375
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/MarkdownEditing/MarkdownEditor-Dark.tmTheme",
 							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
 							"vintage":
 							{
 								"_vintageous_glue_until_normal_mode": false,
-								"_vintageous_non_interactive": false,
-								"_vintageous_processing_notation": false,
 								"action": null,
 								"action_count": "",
 								"mode": "mode_normal",
@@ -524,50 +498,7 @@
 							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2016-10-17-python-tips.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 367,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								67,
-								67
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
-							"vintage":
-							{
-								"_vintageous_glue_until_normal_mode": true,
-								"action": null,
-								"action_count": "",
-								"mode": "mode_insert",
-								"motion": null,
-								"motion_count": "",
-								"must_capture_register_name": false,
-								"normal_insert_count": "1",
-								"partial_sequence": "",
-								"register": "\"",
-								"sequence": "",
-								"xpos": 51
-							}
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -779,7 +710,7 @@
 		"_vintageous_reset_during_init": true,
 		"vintage":
 		{
-			"_cmdline_cd": "C:\\Users\\CBRC\\OneDrive\\workspace\\ericluo.github.com\\_posts"
+			"_cmdline_cd": "D:\\app\\Anaconda3\\Lib\\site-packages\\pandas"
 		}
 	},
 	"show_minimap": false,
