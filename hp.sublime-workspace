@@ -3,39 +3,306 @@
 	{
 		"selected_items":
 		[
+<<<<<<< HEAD
+=======
+			[
+				"to_",
+				"to_numeric\tfunction"
+			],
+			[
+				"T",
+				"True\tinstance"
+			],
+			[
+				"par",
+				"parse_dates\tparam"
+			],
+			[
+				"r",
+				"row_names"
+			],
+			[
+				"col",
+				"columns"
+			]
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 		]
 	},
 	"buffers":
 	[
+<<<<<<< HEAD
 	],
 	"build_system": "",
 	"build_system_choices":
 	[
+=======
+		{
+			"file": "_posts/2016-10-13-宁波银行投资分析.markdown",
+			"settings":
+			{
+				"buffer_size": 677,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2016-10-18-煤炭分级168204溢价套利交易记录.markdown",
+			"settings":
+			{
+				"buffer_size": 1850,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 6633,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/footer.html",
+			"settings":
+			{
+				"buffer_size": 1979,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 1332,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/page.html",
+			"settings":
+			{
+				"buffer_size": 718,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/head.html",
+			"settings":
+			{
+				"buffer_size": 1932,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<header id=\"top\">\n    <div class=\"wrapper\">\n        <a href=\"{{ site.baseurl }}/\" class=\"brand\">{{ site.title }}</a>\n        <small>{{site.brief-intro}}</small>\n        <button id=\"headerMenu\" class=\"menu\"><i class=\"fa fa-bars\"></i></button>\n        <nav id=\"headerNav\">\n            <ul>\n                <li>\n                    {% if page.url == '/' %}\n                    <a class=\"active\" href=\"{{site.baseurl}}/\">\n                        {% else %}\n                    <a href=\"{{site.baseurl}}/\">\n                    {% endif %}\n                        <i class=\"fa fa-home\"></i>Home\n                    </a>\n                </li>\n\n                {% for my_page in site.pages %}\n                    {% if my_page.title %}\n                    <li>\n                        {% if my_page.url == page.url %}\n                        <a class=\"active\" href=\"{{ my_page.url | prepend: site.baseurl }}\">\n                            {% else %}\n                        <a href=\"{{ my_page.url | prepend: site.baseurl }}\">\n                        {% endif %}\n                            <i class=\"fa fa-{{my_page.icon}}\"></i>{{ my_page.title }}\n                        </a>\n                    </li>\n                    {% endif %}\n                {% endfor %}\n            </ul>\n        </nav>\n    </div>\n</header>\n",
+			"file": "_includes/header.html",
+			"file_size": 1310,
+			"file_write_time": 131129963720000000,
+			"settings":
+			{
+				"buffer_size": 1310,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page/4diary.markdown",
+			"settings":
+			{
+				"buffer_size": 144,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "page/3collections.md",
+			"settings":
+			{
+				"buffer_size": 6158,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page/2tags.html",
+			"settings":
+			{
+				"buffer_size": 1732,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page/1category.html",
+			"settings":
+			{
+				"buffer_size": 1908,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page/5about.md",
+			"settings":
+			{
+				"buffer_size": 304,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 	],
 	"build_varint": "",
 	"command_palette":
 	{
+<<<<<<< HEAD
 		"height": 173.0,
 		"last_filter": "gpush",
 		"selected_items":
 		[
 			[
+=======
+		"height": 392.0,
+		"last_filter": "pcis",
+		"selected_items":
+		[
+			[
+				"pcis",
+				"Package Control: Install Package"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"new post",
+				"Jekyll: New post"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 				"gpush",
 				"Git: Push"
 			],
 			[
+<<<<<<< HEAD
 				"Git quick",
 				"Git: Quick Commit"
 			],
 			[
 				"insert",
 				"Insert Command Output"
+=======
+				"gcomm",
+				"Git: Quick Commit"
+			],
+			[
+				"nwe post",
+				"Jekyll: New post"
+			],
+			[
+				"ipush",
+				"Git: Push"
+			],
+			[
+				"gitsta",
+				"Git: Status"
+			],
+			[
+				"newpost",
+				"Jekyll: New post"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"auto",
+				"AutoFileName: Quick Settings"
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
+<<<<<<< HEAD
 				"gpu",
 				"Git: Pull"
 			],
@@ -84,10 +351,93 @@
 				"Git: Status"
 			],
 			[
+=======
+				"gst",
+				"Git: Status"
+			],
+			[
+				"previ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"installp",
+				"Package Control: Install Package"
+			],
+			[
+				"gitpush",
+				"Git: Push"
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"gitquicksta",
+				"Git: Quick Status"
+			],
+			[
+				"ssmg",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add Current File"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				":commit",
+				"Git: Commit"
+			],
+			[
+				"git:",
+				"Git: Add..."
+			],
+			[
+				":status",
+				"Git: Status"
+			],
+			[
+				":add",
+				"Git: Add All"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git:st",
+				"Git: Status"
+			],
+			[
+				"jekyll new",
+				"Jekyll: New post"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 				":push",
 				"Git: Push"
 			],
 			[
+<<<<<<< HEAD
 				"comm",
 				"Git: Commit"
 			],
@@ -116,10 +466,45 @@
 				"Package Control: Install Package"
 			],
 			[
+=======
+				":comm",
+				"Git: Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				":ignore",
+				"Git: Update Project Ignored Files"
+			],
+			[
+				":stat",
+				"Git: Status"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"j",
+				"Jekyll: Insert current date"
+			],
+			[
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 				":pull",
 				"Git: Pull"
 			],
 			[
+<<<<<<< HEAD
 				"gutter",
 				"GitGutter: Compare Against HEAD"
 			],
@@ -163,6 +548,83 @@
 		"height": 126.0,
 		"history":
 		[
+=======
+				":pu",
+				"Git: Push"
+			],
+			[
+				":",
+				"Git: Add All"
+			],
+			[
+				"date",
+				"Jekyll: Insert current date"
+			],
+			[
+				"jekyll",
+				"Jekyll: New post"
+			],
+			[
+				"ana",
+				"Anaconda: Run Current Test"
+			],
+			[
+				"darft",
+				"Jekyll: New draft"
+			],
+			[
+				"jek",
+				"Jekyll: New post"
+			],
+			[
+				"markdonw",
+				"Set Syntax: Markdown"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				":pus",
+				"Git: Push"
+			],
+			[
+				":q",
+				"Set Syntax: SQL"
+			],
+			[
+				"gitgu",
+				"GitGutter: Show Comparing Against"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 274.0,
+		"history":
+		[
+			"(31172 * 1.125 + 31172 * 0.507 - 50000) / 50000",
+			"31172 * 1.125 + 31172 * 0.507",
+			"50000 / 0.802",
+			"0.432854864129638 + 0.12699790950335627 + 0.38468684388884344",
+			"6454579 / 16778788",
+			"2130871 / 16778788",
+			"7262780 / 16778788",
+			"a / b",
+			" a / b",
+			"b = 4",
+			"a = 5",
+			"5 / 2",
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -177,11 +639,18 @@
 	},
 	"expanded_folders":
 	[
+<<<<<<< HEAD
 		"/E/workspace/ericluo.github.com"
+=======
+		"/C/Users/cbrc/OneDrive/workspace/ericluo.github.com",
+		"/C/Users/cbrc/OneDrive/workspace/ericluo.github.com/_layouts",
+		"/C/Users/cbrc/OneDrive/workspace/ericluo.github.com/css/fontawesome"
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 	],
 	"file_history":
 	[
 		"/E/workspace/ericluo.github.com/_posts/2016-07-18-trade-notes.markdown",
+<<<<<<< HEAD
 		"/E/workspace/ericluo.github.com/_posts/2016-01-12-daily-review.markdown",
 		"/E/workspace/ericluo.github.com/_posts/2016-09-11-investment-diary.markdown",
 		"/E/workspace/ericluo.github.com/page/4about.md",
@@ -235,6 +704,81 @@
 		"where_history":
 		[
 			"<open files>,<open folders>"
+=======
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/User/pmd.sublime-build",
+		"/D/app/Anaconda3/Lib/site-packages/pandas/__init__.py",
+		"/E/workspace/ericluo.github.com/_posts/2016-09-10-literate-programming-with-pweave.md",
+		"/E/workspace/ericluo.github.com/_posts/2016-07-16-sublime-tips.markdown",
+		"/E/workspace/ericluo.github.com/_posts/2016-09-10-literate-programming-with-pweave.pmd",
+		"/E/workspace/ericluo.github.com/_posts/2016-09-11-investment-diary.markdown",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/E/workspace/ericluo.github.com/_posts/2016-09-10-literate-programming-with-pweave.markdown",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/AutoFileName/autofilename.sublime-settings",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/E/workspace/ericluo.github.com/hp.sublime-project",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/User/Markdown (Standard).sublime-settings",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Default (Windows).sublime-keymap",
+		"/E/workspace/ericluo.github.com/README.md",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/User/Bold and Italic Markers.tmPreferences",
+		"/E/workspace/ericluo.github.com/_posts/2016-09-10-netgrid-trade.markdown",
+		"/E/workspace/ericluo.github.com/analysis/study.py",
+		"/E/workspace/ericluo.github.com/_posts/2016-07-24-jupyter-tips.markdown",
+		"/C/Users/CBRC/.jupyter/jupyter_notebook_config.py",
+		"/C/Users/CBRC/Downloads/投资分析.md",
+		"/C/Users/CBRC/Documents/Untitled.ipynb",
+		"/E/workspace/ericluo.github.com/_posts/2016-07-16-vim-tricks.markdown",
+		"/E/workspace/ericluo.github.com/_drafts/quant-trade.markdown",
+		"/E/workspace/ericluo.github.com/.gitignore",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/E/workspace/ericluo.github.com/index.md",
+		"/E/workspace/ericluo.github.com/Rakefile",
+		"/E/workspace/ericluo.github.com/_includes/previousAndNext.html",
+		"/E/workspace/ericluo.github.com/_layouts/post.html",
+		"/E/workspace/ericluo.github.com/_includes/footer.html",
+		"/E/workspace/ericluo.github.com/_layouts/default.html",
+		"/E/workspace/ericluo.github.com/_config.yml",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/User/Jekyll.sublime-settings",
+		"/E/workspace/ericluo.github.com/_posts/2016-07-16-investment-study.markdown",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/Jekyll/Jekyll.sublime-settings",
+		"/E/workspace/ericluo.github.com/_includes/header.html",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/User/hp.sublime-project",
+		"/E/workspace/ericluo.github.com/_layouts/page.html",
+		"/E/workspace/ericluo.github.com/_includes/head.html",
+		"/E/workspace/ericluo.github.com/index.html",
+		"/E/workspace/ericluo.github.com/_posts/2016-07-16-投资研究.markdown",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/Jekyll/README.md",
+		"/E/workspace/ericluo.github.com/_includes/themes/bootstrap-3/manifest.yml",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2016-01-30-weekly-review.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2016-01-20-daily-review.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2016-01-14-daily-review.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2016-01-12-daily-review.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2016-01-08-weekly-review.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2016-01-01-2016-investment-strateries.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2015-12-27-investment-summary.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2015-12-24-notes.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2015-12-7-pairs-trading.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2015-11-29-vim-tricks.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2015-11-27-select-stock.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2015-11-25-stock-index-finanace-analysis.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2015-11-23-welcome-to-jekyll.markdown",
+		"/C/Users/CBRC/OneDrive/workspace/docs/2015-11-23-todo.markdown",
+		"/C/Users/CBRC/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/app/Sublime Text 3/Packages/Markdown.sublime-package"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 		]
 	},
 	"find_state":
@@ -242,6 +786,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"\n:",
 			"Sublime",
 			"sublime",
@@ -251,6 +796,14 @@
 			"\n}",
 			"vintageous_incsearch",
 			"选择"
+=======
+			"\"],",
+			"verify_manifest",
+			"manifest",
+			"theme_packages",
+			"ignored_packages",
+			"disabled"
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -268,18 +821,601 @@
 	"groups":
 	[
 		{
+<<<<<<< HEAD
 			"sheets":
 			[
+=======
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_posts/2016-10-13-宁波银行投资分析.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								490,
+								490
+							]
+						],
+						"settings":
+						{
+							"highlight_line": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 9
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/2016-10-18-煤炭分级168204溢价套利交易记录.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1458,
+								1458
+							]
+						],
+						"settings":
+						{
+							"highlight_line": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 21
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 1333.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3273,
+								3273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 55
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 1795.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_includes/footer.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1655,
+								1655
+							]
+						],
+						"settings":
+						{
+							"highlight_line": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1332,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1254,
+								1254
+							]
+						],
+						"settings":
+						{
+							"highlight_line": false,
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 123.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_layouts/page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								718,
+								718
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 23
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								773,
+								773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1112,
+								1112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 58
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "page/4diary.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 6
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "page/3collections.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2042,
+								2042
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 49
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "page/2tags.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "page/1category.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "page/5about.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 			]
 		}
 	],
 	"incremental_find":
 	{
+<<<<<<< HEAD
 		"height": 27.0
 	},
 	"input":
 	{
 		"height": 35.0
+=======
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 31.0
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 	},
 	"layout":
 	{
@@ -304,15 +1440,46 @@
 		]
 	},
 	"menu_visible": true,
+<<<<<<< HEAD
+=======
+	"output.exec":
+	{
+		"height": 124.0
+	},
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 	"output.find_results":
 	{
 		"height": 0.0
 	},
+<<<<<<< HEAD
 	"pinned_build_system": "",
 	"project": "hp.sublime-project",
 	"replace":
 	{
 		"height": 50.0
+=======
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.git-commit":
+	{
+		"height": 124.0
+	},
+	"output.git-pull":
+	{
+		"height": 148.0
+	},
+	"output.git-push":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "Packages/User/pmd.sublime-build",
+	"project": "hp.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -322,6 +1489,7 @@
 		"selected_items":
 		[
 			[
+<<<<<<< HEAD
 				"investment",
 				"_posts\\2016-09-11-investment-diary.markdown"
 			],
@@ -348,12 +1516,145 @@
 			[
 				"notes",
 				"notes.markdown"
+=======
+				"5",
+				"page\\5diary.markdown"
+			],
+			[
+				"header",
+				"_includes\\header.html"
+			],
+			[
+				"4",
+				"page\\4about.md"
+			],
+			[
+				"2",
+				"page\\2tags.html"
+			],
+			[
+				"3",
+				"page\\3collections.md"
+			],
+			[
+				"header.",
+				"_includes\\header.html"
+			],
+			[
+				"head",
+				"_includes\\head.html"
+			],
+			[
+				"pag",
+				"_layouts\\page.html"
+			],
+			[
+				"index.",
+				"index.html"
+			],
+			[
+				"宁波",
+				"_posts\\2016-10-13-宁波银行投资分析.markdown"
+			],
+			[
+				"tradenote",
+				"_posts\\2016-07-18-trade-notes.markdown"
+			],
+			[
+				"pweave",
+				"_posts\\2016-09-10-literate-programming-with-pweave.md"
+			],
+			[
+				"literate",
+				"_posts\\2016-09-10-literate-programming-with-pweave.markdown"
+			],
+			[
+				"sublime",
+				"_posts\\2016-07-16-sublime-tips.markdown"
+			],
+			[
+				"md",
+				"README.md"
+			],
+			[
+				".md",
+				"_posts\\2016-09-10-literate-programming-with-pweave.md"
+			],
+			[
+				"markd",
+				"_posts\\2016-07-16-vim-tricks.markdown"
+			],
+			[
+				"markdo",
+				"_posts\\2016-07-16-sublime-tips.markdown"
+			],
+			[
+				"study",
+				"analysis\\study.py"
+			],
+			[
+				"ignore",
+				".gitignore"
+			],
+			[
+				"index.md",
+				"index.md"
+			],
+			[
+				"post",
+				"_layouts\\post.html"
+			],
+			[
+				"previ",
+				"_includes\\previousAndNext.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"fo",
+				"_includes\\footer.html"
+			],
+			[
+				"invers",
+				"_posts\\2016-07-16-investment-study.markdown"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"confi",
+				"_config.yml"
+			],
+			[
+				"config",
+				"_config.yml"
+			],
+			[
+				"foot",
+				"_includes\\footer.html"
+			],
+			[
+				"defau",
+				"_layouts\\default.html"
+			],
+			[
+				"rake",
+				"Rakefile"
+			],
+			[
+				"vim",
+				"C:\\Users\\CBRC\\OneDrive\\workspace\\docs\\2015-11-29-vim-tricks.markdown"
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
+<<<<<<< HEAD
 		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
@@ -364,6 +1665,14 @@
 			]
 		],
 		"width": 380.0
+=======
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 	},
 	"select_symbol":
 	{
@@ -377,6 +1686,7 @@
 	"selected_group": 0,
 	"settings":
 	{
+<<<<<<< HEAD
 		"vintage":
 		{
 		}
@@ -386,6 +1696,23 @@
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 268.0,
+=======
+		"_vintageous_last_buffer_search": "twitter",
+		"_vintageous_last_buffer_search_command": "vi_slash",
+		"_vintageous_last_char_search_command": "vi_t",
+		"_vintageous_last_character_search": "w",
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+			"_cmdline_cd": "C:\\Users\\cbrc\\OneDrive\\workspace\\ericluo.github.com\\_posts"
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 335.0,
+>>>>>>> 85e80a72dc7d6918559e8b730df34ee7b248466d
 	"status_bar_visible": true,
 	"template_settings":
 	{
