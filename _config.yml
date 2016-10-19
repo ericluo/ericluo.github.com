@@ -13,15 +13,10 @@ url: "http://ericluo.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
-# other links
-twitter_username: ericluo
-# facebook_username: gaohaoyang.water
 github_username:  ericluo
 email: luo.wenbo@qq.com
 weibo_username: 1769275090
 zhihu_username: ericluo
-linkedIn_username: 
-dribbble_username: 
 
 description_footer: 阅读、投资、思考和生活的记录与感悟
 
@@ -53,7 +48,7 @@ category_dir: category/
 tag_dir: tag/
 
 # excerpt
-excerpt_separator: "\n\n\n\n"
+# excerpt_separator: "\n\n\n\n"
 
 # paginate
 gems: [jekyll-paginate]

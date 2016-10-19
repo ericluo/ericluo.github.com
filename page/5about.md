@@ -13,19 +13,17 @@ icon: heart
 
 ## 联系我
 
-* GitHub：[ericluo](https://github.com/ericluo)
-* email：luo.wenbo@qq.com
-* [Weibo](http://weibo.com/3115521wh)
+* [GitHub](https://github.com/ericluo)
+* [邮件](luo.wenbo@qq.com)
+* [微博](http://weibo.com/3115521wh)
 * [知乎](https://www.zhihu.com/people/ericluo)
 
 ## 关于本站
 
 
-### Update Log
+### 更新记录
 
 
 ## 友情链接
-
-## Comments
 
 {% include comments.html %}
