@@ -1,0 +1,393 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"last_filter": "gpush",
+		"selected_items":
+		[
+			[
+				"gpush",
+				"Git: Push"
+			],
+			[
+				"Git quick",
+				"Git: Quick Commit"
+			],
+			[
+				"insert",
+				"Insert Command Output"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"gpu",
+				"Git: Pull"
+			],
+			[
+				"gstatus",
+				"Git: Status"
+			],
+			[
+				"gp",
+				"Git: Pull"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"revert",
+				"File: Revert"
+			],
+			[
+				"remove pack",
+				"Package Control: Remove Package"
+			],
+			[
+				":stat",
+				"Git: Status"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				":push",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				":status",
+				"Git: Status"
+			],
+			[
+				":a",
+				"Git: Add..."
+			],
+			[
+				"jekyll",
+				"Jekyll: Open post"
+			],
+			[
+				"sublimerepl",
+				"Build With: sublimerepl_build_system_hack"
+			],
+			[
+				"python",
+				"Anaconda: Goto Python object"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				":pull",
+				"Git: Pull"
+			],
+			[
+				"gutter",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pri",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"v",
+				"Vintageous: Open .vintageousrc"
+			],
+			[
+				"mark",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"Vintageous",
+				"Vintageous: Toggle Vim Ctrl Keys"
+			],
+			[
+				"controll",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/workspace/ericluo.github.com"
+	],
+	"file_history":
+	[
+		"/E/workspace/ericluo.github.com/_posts/2016-07-18-trade-notes.markdown",
+		"/E/workspace/ericluo.github.com/_posts/2016-01-12-daily-review.markdown",
+		"/E/workspace/ericluo.github.com/_posts/2016-09-11-investment-diary.markdown",
+		"/E/workspace/ericluo.github.com/page/4about.md",
+		"/E/workspace/ericluo.github.com/.gitignore",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/C/Users/cbrc/OneDrive/workspace/investment/blog/银行B网格交易2.ipynb",
+		"/C/Users/cbrc/OneDrive/workspace/docs/test.md",
+		"/C/Users/cbrc/OneDrive/workspace/docs/test.markdown",
+		"/E/workspace/ericluo.github.com/investment/notes.markdown",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/C/Users/cbrc/Downloads/FIR_design.mdw",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/E/workspace/ericluo.github.com/_posts/2016-07-16-sublime-tips.markdown",
+		"/E/workspace/ericluo.github.com/investment/index.markdown",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Python/Default.sublime-commands",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/Default (Windows).sublime-keymap",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Python/ipy_repl.py",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Main.sublime-menu.template",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/User/Jekyll.sublime-settings",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/E/workspace/ericluo.github.com/analysis/study.py",
+		"/C/Users/cbrc/.jupyter/migrated",
+		"/C/Users/cbrc/.jupyter/jupyter_notebook_config.py",
+		"/C/Users/cbrc/.jupyter/nbconfig/notebook.json",
+		"/C/Users/cbrc/OneDrive/workspace/investment/招商银行投资分析.py",
+		"/C/Users/cbrc/.jupyter/jupyter_nbconvert_config.json",
+		"/D/app/Anaconda3/Lib/site-packages/jupyter_contrib_nbextensions/templates/nbextensions.tpl",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/Python/Main.sublime-menu",
+		"/E/workspace/ericluo.github.com/analysis/banks.xls",
+		"/E/workspace/ericluo.github.com/_posts/2016-07-19-600036-research-report.markdown",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/Jekyll/Jekyll.sublime-settings",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/Jekyll/README.md",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/workspace/hp/_posts/2015-11-25-stock-index-finanace-analysis.markdown",
+		"/E/workspace/hp/_posts/2015-12-22-welcome-to-jekyll.markdown",
+		"/E/workspace/hp/_posts/2015-12-7-pairs-trading.markdown",
+		"/C/Users/cbrc/AppData/Roaming/Sublime Text 3/Packages/User/.vintageousrc",
+		"/E/workspace/hp/_posts/2015-11-29-vim-tricks.markdown",
+		"/E/workspace/hp/_posts/2015-11-27-select-stock.markdown",
+		"/E/workspace/hp/_posts/2015-11-23-todo.markdown"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open files>,<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n:",
+			"Sublime",
+			"sublime",
+			"Sublime",
+			"_site",
+			"notebook_dir",
+			"\n}",
+			"vintageous_incsearch",
+			"选择"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "hp.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"investment",
+				"_posts\\2016-09-11-investment-diary.markdown"
+			],
+			[
+				"abou",
+				"page\\4about.md"
+			],
+			[
+				"tradeno",
+				"_posts\\2016-07-18-trade-notes.markdown"
+			],
+			[
+				"",
+				"_posts\\2016-01-12-daily-review.markdown"
+			],
+			[
+				"_posts/",
+				"_posts\\2016-01-12-daily-review.markdown"
+			],
+			[
+				"dia",
+				"_posts\\2016-09-11-investment-diary.markdown"
+			],
+			[
+				"notes",
+				"notes.markdown"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\workspace\\rqalpha\\rq.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"vintage":
+		{
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 268.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
