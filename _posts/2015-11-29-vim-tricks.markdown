@@ -5,20 +5,15 @@ author: luowenbo
 tags: vim
 ---
 
-* 主要内容
-{:toc}
-
----
-
 `VIM` 的最佳使用原则是 **执行、重复、回退** ，在使用 `VIM` 的过程中，要时刻注意有没有应用这个原则了简化编辑工作的机会。
 
 `Dot Formula`
-: One Keystroke to move, One Keystroke to Execute
+> One Keystroke to move, One Keystroke to Execute
 
 
-|----------------------------------+-----------------------+--------+---------+------|
+
 | Intent                           | Act                   | Repeat | Reverse | mode |
-|----------------------------------+-----------------------+:------:+:-------:+------|
+|----------------------------------|-----------------------|--------|---------|------|
 | Make a change                    | {edit}                |    .   |    u    |      |
 | Scan line for next character     | f{char}/t{char}       |    ;   |    ,    |      |
 | Scan line for previous character | F{char}/T{char}       |    ;   |    ,    |      |
@@ -26,7 +21,6 @@ tags: vim
 | Scan document for previous match | ?pattern<CR>          |    n   |    N    |      |
 | Perform substitution             | :s/target/replacement |    &   |    u    |      |
 | Execute a sequence of changes    | qx{changes}q          |   @x   |    u    |      |
-|----------------------------------+-----------------------+--------+---------+------|
 
 # VIM应用技巧
 
@@ -36,10 +30,10 @@ tags: vim
 
 加入下面这两行配置，可以让你简单地按ESC就回到正常模式，而不需要手动切换为英文输入法：
 
-{% highlight vim %}
+```vim
 au InsertEnter * set noimdisable
 au InsertLeave * set imdisable
-{% endhighlight %}
+```
 
 注意：如果再进入插入模式会自动切换到正常模式之前的输入法。
 
@@ -56,7 +50,7 @@ au InsertLeave * set imdisable
 ### Vim's Operator commands
 
 | Trigger | Effect                                            |
-|---------+---------------------------------------------------|
+|---------|---------------------------------------------------|
 | c       | Change                                            |
 | d       | Delete                                            |
 | y       | Yank into register                                |
@@ -67,7 +61,6 @@ au InsertLeave * set imdisable
 | <       | Shift left                                        |
 | =       | Autoindent                                        |
 | !       | Filter {motion} lines through an external program |
-|---------+---------------------------------------------------|
 
 #### Vim's Grammer
 
@@ -79,22 +72,19 @@ au InsertLeave * set imdisable
 ## Insert mode
 
 | Keystrokes            | Effect                                                 |
-|-----------------------+--------------------------------------------------------|
+|-----------------------|--------------------------------------------------------|
 | `<C-h>`               | Delete back one character (backspace)                  |
 | `<C-w>`               | Delete back one word                                   |
 | `<C-u>`               | Delete back to start of line                           |
 | `<C-r>{register}`     | Paste text from {register}                             |
 | `<C-r>=`              | Paste return from expression register                  |
-|-----------------------+--------------------------------------------------------|
 | `<C-v>{123}`          | Insert character by decimal code                       |
 | `<C-v>u{1234}`        | Insert character by hexadecimal code                   |
 | `<C-v>{nondigit}`     | Insert nondigit literally                              |
 | `<C-k>{char1}{char2}` | Insert character represented by {char1}{char2} digraph |
-|-----------------------+--------------------------------------------------------|
 | `<Esc>`               | Switch to Normal mode                                  |
 | `<C-[>`               | Switch to Normal mode                                  |
 | `<C-o>`               | Switch to Insert Normal mode[^1]                       |
-|-----------------------+--------------------------------------------------------|
 
 [^1]: 用于在 `Insert mode` 下临时性地调用一次 `Normal mode` 命令，然后在返回 `Insert mode`。
 
@@ -118,7 +108,7 @@ au InsertLeave * set imdisable
 ### Ex Commands
 
 | Keystrokes                                    | Effect                                                                          |
-|-----------------------------------------------+---------------------------------------------------------------------------------|
+|-----------------------------------------------|---------------------------------------------------------------------------------|
 | :[range]delete [x]                            | delete lines into register x                                                    |
 | :[range]yank [x]                              | yank specified lines [into register x]                                          |
 | :[line]put [x]                                | put the text from register x after the specified line                           |
@@ -128,14 +118,13 @@ au InsertLeave * set imdisable
 | :[range]normal {commands}                     | execute Normal mode {commands} with {string} on each specified line             |
 | :[range]substitute/{pattern}/{string}/[flags] | replace occurrences of {pattern} with {string} on each specified line           |
 | :[range]global/{pattern}/[cmd]                | execute the Ex command [cmd] on all specified lines where the {pattern} matches |
-|-----------------------------------------------+---------------------------------------------------------------------------------|
 
 使用 `q:` 可以进入 `Command line window` 模式。
 
 # Registers
 
 | name                | register |
-|---------------------+----------|
+|---------------------|----------|
 | Unnamed Registers   | ""       |
 | Yank Registers      | "0       |
 | Named Registers     | "a - "z  |
