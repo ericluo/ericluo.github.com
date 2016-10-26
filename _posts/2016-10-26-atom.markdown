@@ -20,3 +20,4 @@ tags: atom
 - script 执行各种脚本文件的包
 - vim-mode 暂时不用（因为vim mode中中文输入法的切换非常不方便。）
 - ex-mode 同上
+- atom-chrome 使用Atom来编辑Chrome中的文本框
