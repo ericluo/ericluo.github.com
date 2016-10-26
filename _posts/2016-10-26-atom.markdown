@@ -1,0 +1,22 @@
+---
+layout: post
+title: atom编辑器设置
+date: '2016-10-26 11:05:06 +0800'
+tags: atom
+---
+
+借着这两天的空闲，将自己日常用的编辑器从`Sublime`切换到了`Atom`，前者基于`Python`的内核，后者基于现代的`Web`技术。前者更新较慢，没有大公司或团队支撑，后者是`Github`出品，且版本更新更为频繁。更重要的是，其使用了基于`Coffeescript`, `Less`的JavaScript和css的成熟技术，以`Chrome`为内核，更具有现代感。在页面的展示上，效果更佳！特别是在编写`Markdown`的过程中，可以在编辑器类进行展示，只能说是太强大了。
+
+# 使用插件
+
+`Atom`自身就是使用插件架构堆积而成，除其官方自带的插件外，比较好用的社区插件如下：
+
+- atom-beautify
+- git-plus 在编辑器中自己调用git命令
+- jekyll 提供了一组基于jekyll的工具和snippet
+- markdown-img-paste 方便的图床管理包，将剪贴板中的图标上传图床并插入markdown文档
+- platformio-ide-terminal 编辑器中的终端管理包
+- terminal-plus 同上，但是暂时有bug，无法正常使用
+- script 执行各种脚本文件的包
+- vim-mode 暂时不用（因为vim mode中中文输入法的切换非常不方便。）
+- ex-mode 同上
