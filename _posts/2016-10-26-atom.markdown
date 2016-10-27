@@ -13,7 +13,7 @@ tags: atom
 
 - atom-beautify
 - git-plus 在编辑器中自己调用git命令
-- jekyll 提供了一组基于jekyll的工具和snippet
+- markdown-writer 提供了一组基于jekyll的工具和snippet
 - markdown-img-paste 方便的图床管理包，将剪贴板中的图标上传图床并插入markdown文档
 - platformio-ide-terminal 编辑器中的终端管理包
 - terminal-plus 同上，但是暂时有bug，无法正常使用
