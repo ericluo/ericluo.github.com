@@ -32,3 +32,31 @@ tags: atom
 - ex-mode 同上
 
 - atom-chrome 使用Atom来编辑Chrome中的文本框
+
+# 不同电脑之间配置文件的同步
+
+可以通过`sync-settings`来进行不同电脑之间配置文件的同步，其使用了`gist`作为后端存储。因此在系统配置上需要做如下设置：
+
+- Personal Access Token
+
+> 080af04006133c2964f7b75f9d46889e63ebe532
+
+- Gist id
+
+> 7f228e0a47090155cb7bb248099f2d53
+
+## 用法
+
+调用如下命令来进行配置文件查看、备份、恢复和检查。
+
+- sync-settings:backup
+
+- sync-settings:restore
+
+--------------------------------------------------------------------------------
+
+- sync-settings:view-backup
+
+- sync-settings:check-backup
+
+- sync-settings:fork

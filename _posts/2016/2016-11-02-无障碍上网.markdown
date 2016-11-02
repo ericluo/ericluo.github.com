@@ -1,0 +1,8 @@
+---
+layout: post
+title: 无障碍上网
+date: '2016-11-02 18:21'
+tags: sa
+---
+
+GFW的限制，导致很多网站无法访问，也造成了很多应用工具使用不正常，如`gist`, `gmail`等。今天发现了一个好用的翻墙软件 [蓝灯(Lantern)](https://github.com/getlantern/forum)，可以替代'更换host文件'等阶段性有效的方法和工具。
