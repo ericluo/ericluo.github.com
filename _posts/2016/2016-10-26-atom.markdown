@@ -27,7 +27,7 @@ tags: atom
 
 - script 执行各种脚本文件的包
 
-- vim-mode 暂时不用（因为vim mode中中文输入法的切换非常不方便。）
+- vim-mode-plus(在中文输入状态下，可以使用 **inset mode**，或者是禁用该插件)
 
 - ex-mode 同上
 
