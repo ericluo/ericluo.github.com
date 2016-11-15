@@ -2,7 +2,9 @@
 layout: post
 title: 个人研究平台搭建升级版
 date: '2016-10-28 22:48'
-tags: 投资
+tags:
+  - 投资
+  - 写作
 ---
 
 # 研究平台
@@ -21,7 +23,7 @@ tags: 投资
 
 使用的软件：
 
-- Atom
+- Atom 和 Markdown Writer
 - Git 和 GitHub
 - jekyll
 
@@ -39,9 +41,11 @@ tags: 投资
 
 通过七牛网提供的同步工具 `QRSBox` ，实现本地与网络存储之间的自动同步，就可以无缝对接，极大地提供工作效率。在 `Windows` 平台上，可以使用图形界面工具进行同步（每次启动后要开启同步程序）。在 `Mac` 平台上，需要 `./qrsboxcli sync &` 来启动同步进程。详细设置参见[七牛网上的相关文档](http://developer.qiniu.com/docs/v6/tools/qrsbox.html)。
 
+七牛网提供图床的URL是`http://7xonmk.com1.z0.glb.clouddn.com/`
+
 ### 截图与图片处理
 
-可以通过`Snagit`工具来截图，这是一个功能非常晚辈的截图工具，可以设置快捷键（Ctrl+Alt+C）来快速截取图片。 ![截图示例](http://ooo.0o0.ooo/2016/10/28/5813672b467d2.png)
+可以通过`Snagit`工具来截图，这是一个功能非常晚辈的截图工具，可以设置快捷键（Ctrl+Alt+C）来快速截取图片。并将图片文件保存到上节设置的同步目录中，就可以通过外部链接的方式来访问图片了。这种方式虽然麻烦一点，但是可靠性和稳定性最好。
 
 # 发布平台
 
