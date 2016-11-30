@@ -5,25 +5,27 @@ permalink: /about/
 icon: heart
 ---
 
-* content
-{:toc}
+# 投资箴言
 
-## 关于我
+## 《投资中最重要的事》 --（Howard Marks）
 
+> 价格和价值的关系是成功投资的关键。低于价值买进是最可靠的盈利途径，高于价值买进则很少奏效。
 
-## 联系我
+> 在投资者，一切都有利有弊并且是对称的，只有卓越技术除外。只有依靠技术才能保证在有利环境中的收益高于在不利环境中的损失。这就是我们寻找的投资不对称性。卓越技术是活的不对称投资的先决条件。
 
-* [GitHub](https://github.com/ericluo)
-* [邮件](luo.wenbo@qq.com)
-* [微博](http://weibo.com/3115521wh)
-* [知乎](https://www.zhihu.com/people/ericluo)
+> 在价值坚挺、价格低于价值以及普遍消极心理的基础上买入，很有可能会取得最好的投资结果。然而，即使这样，在形势按照我们的预期发展之前，也可能会有很长一段时间对我们不利。"定价过低"绝不等同于"很快上涨"。这就是我第二句重要的格言："过于超前与犯错没有区别。"在证明我们的正确性之前，我们需要足够的耐心与毅力长期坚持我们的立场。
 
-## 关于本站
+# 关于我
 
+# 联系我
 
-### 更新记录
+- [GitHub](https://github.com/ericluo)
+- [邮件](luo.wenbo@qq.com)
+- [微博](http://weibo.com/3115521wh)
+- [知乎](https://www.zhihu.com/people/ericluo)
 
+# 关于本站
 
-## 友情链接
+## 更新记录
 
 {% include comments.html %}
