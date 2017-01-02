@@ -1,7 +1,7 @@
 ---
 title: 煤炭分级168204溢价套利交易记录
 layout: post
-tags: 投资
+tags: 投资 套利
 ---
 
 昨天，根据集思录的 [紫葳侍郎](https://xueqiu.com/ziweishilang) 的提示，买入煤炭分级168204进行溢价套利。
