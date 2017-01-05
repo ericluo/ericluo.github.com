@@ -159,4 +159,4 @@ tableExtraPipes: true
 # template variables is a key-value map used in template string
 # e.g. you can have `posts/{author}/{year}` in newPostFileName after you set author.
 templateVariables:
-  author: "Your Name"
+  author: "Mr. Alpha"
