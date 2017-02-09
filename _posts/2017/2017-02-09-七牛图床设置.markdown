@@ -1,0 +1,25 @@
+---
+layout: post
+title: 七牛图床设置
+date: "2017-02-09 21:54"
+tags: sa
+---
+
+七牛提供了免费的云存储空间。在利用`GitHub Pages`搭建个人主页时，图片是不方便存储在`GitHub`上的，那么利用七牛提供的存储空间不仅有利于提高基于`git`操作的速度，而且七牛提供的 `CDN`可以加快页面的访问速度。
+
+# 安装七牛同步客户端
+
+七牛提供了`qrsbox`和`qrsboxcli`两个工具来辅助将本地文件同步到七牛的云存储上，其中前者是一个图形化工具，需要每次自己手动同步，后者提供了命令行工具，可以将其加入的自动任务，在电脑启动后自动执行。
+
+# 在本地同步文件夹中保存图片文件
+
+将本地截屏文件保存至同步文件夹中。在`windows`环境下，可以将同步文件夹设置在`OneDrive`目录下，这样不同桌面计算机的同步文件夹可以保存一致。
+
+# 通过七牛`URL`来访问图片文件
+
+在blog或文章中可以通过Qiniu的URL (http://7xonmk.com1.z0.glb.clouddn.com/) 来访问同步文件夹中对应的图片文件了。
+
+
+# 使用说明
+
+详细使用说明参见[API/SDK / 命令行工具问题](https://support.qiniu.com/question/category?id=69503&categoryTitle=%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8&forumTitle=API%2FSDK%20%2F%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E9%97%AE%E9%A2%98)
