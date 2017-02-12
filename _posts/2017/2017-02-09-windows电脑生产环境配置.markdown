@@ -5,13 +5,31 @@ date: "2017-02-09 21:54"
 tags: sa
 ---
 
+# 工具软件
+
+- KeyTweak（主要用于将<kbd>Caps</kbd>映射为<kbd>Ctrl</kbd>)
+- 搜狗输入法
+- Snagit
+- 微信
+- 7-zip
+- Adobe Reader
+- 百度网盘
+- 迅雷下载
+- WPS
+
+# 编辑器(`Atom`)
+
+编辑器使用`Atom`，安装好编辑器后，首先安装的插件是`sync-settings`[^1]，相关的设置可以参考README文件。接下来就可以通过该插件来同步不同计算机之间的个性化设置信息了。
+
+[^1] 首次安装第一个插件时，`Atom`可能需要较长的时间下载安装相关源文件，考验耐心。
+
 # Git
 
 ## 下载`Git`的客户端软件
 
 ## 做好`Git`相关设置
 
-如`user.email`,`user.name`, `core.quotepath`等相关配置项，其中最后一个配置项用于解决`EDITMSG`中的中文文件名乱码问题，配置如下：
+如`user.email`,`user.name`,   `core.quotepath`等相关配置项，其中最后一个配置项用于解决`EDITMSG`中的中文文件名乱码问题，配置如下：
 
 > git config --global core.quotepath false
 
@@ -19,12 +37,7 @@ tags: sa
 
 一种比较简单的方法是通过下载`GitHub Desktop`客户端，其自动会在`Home\.ssh\`目录下生成对应的私钥，并自动在`GitHub`上设置好了对应的公钥。那么我们只需将`.ssh`目录中的文件`github_rsa`复制并更名为`id_rsa`文件即可。这样就可以通过命令行来访问`GitHub`上的项目了。
 
-
 # 图床设置
-
-## 截图软件
-
-Snagit
 
 七牛提供了免费的云存储空间。在利用`GitHub Pages`搭建个人主页时，图片是不方便存储在`GitHub`上的，那么利用七牛提供的存储空间不仅有利于提高基于`git`操作的速度，而且七牛提供的 `CDN`可以加快页面的访问速度。
 
@@ -42,4 +55,12 @@ Snagit
 
 ## 使用说明
 
-详细使用说明参见[API/SDK / 命令行工具问题](https://support.qiniu.com/question/category?id=69503&categoryTitle=%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8&forumTitle=API%2FSDK%20%2F%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E9%97%AE%E9%A2%98)
+详细使用说明参见[API/SDK/命令行工具问题](https://support.qiniu.com/question/category?id=69503&categoryTitle=%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8&forumTitle=API%2FSDK%20%2F%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E9%97%AE%E9%A2%98)
+
+# Python
+
+安装`Python`可以通过`Anaconda`软件包来完成。
+
+# 股票软件
+
+主要有看行情的同花顺和用于交易的平安证券、银河证券等。

@@ -1,7 +1,7 @@
 ---
-layout: "post"
-title: "W4每周复盘"
-date: "2017-01-24 11:23"
+layout: post
+title: W4每周复盘
+date: '2017-02-12 21:36'
 tags: 每周复盘 投资
 ---
 
