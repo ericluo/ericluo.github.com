@@ -25,6 +25,8 @@ tags: atom
 
   - terminal-plus 同上，但是暂时有bug，无法正常使用
 
+  **该包目前在`Windows10`下有`bug`,打开终端后，系统frozen了，无法使用，目前没有办法解决。**
+
 - script 执行各种脚本文件的包
 
 - vim-mode-plus(在中文输入状态下，可以使用 **inset mode**，或者是禁用该插件)
@@ -52,8 +54,6 @@ tags: atom
 - sync-settings:backup
 
 - sync-settings:restore
-
---------------------------------------------------------------------------------
 
 - sync-settings:view-backup
 

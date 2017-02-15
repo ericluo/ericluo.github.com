@@ -8,13 +8,31 @@ tags: sa
 # 工具软件
 
 - KeyTweak（主要用于将<kbd>Caps</kbd>映射为<kbd>Ctrl</kbd>)
+
 - 搜狗输入法
+
 - Snagit
+
+  可以从其官网上下载安装最新版（13），注册码如下：
+
+  - FFC2M-Z59RE-QLACP-C5MBV-M8RMB
+  - 3KDPC-35ADD-CVG2U-5XU6C-MF3AF
+  - 3AHYA-EMM5P-FTAYS-C9HMP-Y639E
+  - HLADM-6UL48-27WA4-C9HH5-L326C
+  - HML6E-CZMVY-QNY3C-CSAFH-AEC35
+  - DQTXN-6JDSD-ZNDDP-CQAKH-AAAMC
+  - 6BANC-FN3C4-DACAW-AMXHS-D5C3C
+
 - 微信
+
 - 7-zip
+
 - Adobe Reader
+
 - 百度网盘
+
 - 迅雷下载
+
 - WPS
 
 # 编辑器(`Atom`)
