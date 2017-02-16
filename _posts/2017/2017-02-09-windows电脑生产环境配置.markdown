@@ -39,8 +39,6 @@ tags: sa
 
 编辑器使用`Atom`，安装好编辑器后，首先安装的插件是`sync-settings`，相关的设置可以参考README文件。接下来就可以通过该插件来同步不同计算机之间的个性化设置信息了。
 
-  ~~[^1]: 首次安装第一个插件时，`Atom`可能需要较长的时间下载安装相关源文件，考验耐心。~~
-
 # Git
 
 ## 下载`Git`的客户端软件
@@ -74,6 +72,20 @@ tags: sa
 ## 使用说明
 
 详细使用说明参见[API/SDK/命令行工具问题](https://support.qiniu.com/question/category?id=69503&categoryTitle=%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8&forumTitle=API%2FSDK%20%2F%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E9%97%AE%E9%A2%98)
+
+# Ruby及相关软件
+
+使用`GitHub Pages`来写文章需要依赖于`Ruby`。在`windows`平台上安装`Ruby`最方便的方法是通过`chocolate`工具，下载及安装方法参见 [https://chocolatey.org/install](https://chocolatey.org/install)。需要注意的是在安装之间需要用管理员身份开启`Powershell`，并且正确设置执行脚本的权限：
+
+>  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+然后，就可以使用`choco`来安装`ruby`相关的程序和packages了，[Jekyll on Windows](https://jekyllrb.com/docs/windows/#installation)
+
+## 疑难问题
+
+- SSL CERTIFICATE UPDATES
+
+  `gem`安装过程中会碰到ssl cert相关问题时，需要对rubygems进行更新，参见http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages
 
 # Python
 
