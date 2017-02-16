@@ -35,14 +35,13 @@ google_analytics_id: UA-72449510-4 # google 分析追踪id
 
 # Build settings
 markdown: kramdown
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
 # port
 # port: 1234
-
+theme: minima
 # url
 category_dir: category/
 tag_dir: tag/
