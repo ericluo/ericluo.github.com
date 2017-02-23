@@ -73,6 +73,13 @@ tags: sa
 
 详细使用说明参见[API/SDK/命令行工具问题](https://support.qiniu.com/question/category?id=69503&categoryTitle=%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8&forumTitle=API%2FSDK%20%2F%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7%E9%97%AE%E9%A2%98)
 
+### 七牛同步客户端设置
+
+使用七牛提供的同步客户端用于本地和云储存数据的同步，方便云存储的使用。将改同步客户端设置为开机自动启动即可。具体方法如下：
+
+> 将`qrsbox.exe`文件的快捷方式添加至`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`目录下
+
+
 # Ruby及相关软件
 
 使用`GitHub Pages`来写文章需要依赖于`Ruby`。在`windows`平台上安装`Ruby`最方便的方法是通过`chocolate`工具，下载及安装方法参见 [https://chocolatey.org/install](https://chocolatey.org/install)。需要注意的是在安装之间需要用管理员身份开启`Powershell`，并且正确设置执行脚本的权限：
