@@ -70,3 +70,7 @@ tags: atom
 - sync-settings:check-backup
 
 - sync-settings:fork
+
+# 软件更新
+
+将软件的自动更新关闭。**今后有大版本出来，或是使用过程中碰到软件缺陷的时候才作版本更新**，要不然跟随版本更新的操作太耗时了。
