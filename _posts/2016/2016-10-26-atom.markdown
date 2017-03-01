@@ -42,6 +42,9 @@ tags: atom
 
 - atom-chrome 使用Atom来编辑Chrome中的文本框
 
+- eval-and-replace 用于动态执行代码片段
+
+
 # 不同电脑之间配置文件的同步
 
 可以通过`sync-settings`来进行不同电脑之间配置文件的同步，其使用了`gist`作为后端存储。因此在系统配置上需要做如下设置：
