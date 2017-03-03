@@ -13,6 +13,17 @@ tags:
 - 使用各类量化平台或Excel作为数据平台（目前该平台只能用于Windows）
 - 使用`XMind`梳理研究思路和体系
 
+## `Python` `Pandas`
+
+在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了，倒是可以省不少事。
+
+`plotly`账号信息：
+
+> username: luowenbo
+> API Key: Gn3DdXs0bNM3e5uecjB1
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~luowenbo/2.embed"></iframe>
+
 # 写作平台
 
 主要特点：
