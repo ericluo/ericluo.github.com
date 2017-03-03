@@ -22,7 +22,7 @@ tags:
 > username: luowenbo
 > API Key: Gn3DdXs0bNM3e5uecjB1
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~luowenbo/2.embed"></iframe>
+<iframe width="600" height="400" frameborder="0" scrolling="no" src="//plot.ly/~luowenbo/2.embed"></iframe>
 
 # 写作平台
 
