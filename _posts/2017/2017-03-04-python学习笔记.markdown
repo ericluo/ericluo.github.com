@@ -1,7 +1,7 @@
 ---
-layout: "post"
-title: "Python学习笔记"
-date: "2017-02-26 21:10"
+layout: post
+title: Python学习笔记
+date: '2017-03-04 13:19'
 tags: Python
 ---
 
