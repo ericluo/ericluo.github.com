@@ -29,8 +29,9 @@ tags: 双汇发展 投资
 
 下面在添加一张动态图：
 
-<iframe width="800" height="600" frameborder="0" scrolling="no" src="//plot.ly/~luowenbo/9.embed?link=false"></iframe>
+<iframe width="800" height="600" frameborder="0" scrolling="no" src="//plot.ly/~luowenbo/9.embed?link=false&logo=false"></iframe>
 
+<iframe width="800" height="600" frameborder="0" scrolling="no" src="//plot.ly/~luowenbo/2.embed?link=false&logo=false"></iframe>
 扣非净利润尽管总额是不断上升的（2011年除外，受瘦肉精事件影响？），但增速也是一路向下。至此，我们似乎已经找到了其估值不断下降的理由。
 
 ![净利润](http://7xonmk.com1.z0.glb.clouddn.com/2017-02-15_22-14-19.png)
