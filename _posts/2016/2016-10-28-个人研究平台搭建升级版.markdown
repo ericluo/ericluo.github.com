@@ -19,8 +19,10 @@ tags:
 
 `plotly`账号信息：
 
-> username: luowenbo
+> username: luowenbo  
 > API Key: Gn3DdXs0bNM3e5uecjB1
+
+### 示例：
 
 <iframe width="800" height="600" frameborder="0" scrolling="no" src="//plot.ly/~luowenbo/2.embed"></iframe>
 

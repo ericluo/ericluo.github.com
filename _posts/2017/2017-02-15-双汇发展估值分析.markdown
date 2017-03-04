@@ -27,6 +27,10 @@ tags: 双汇发展 投资
 
 ![营收](http://7xonmk.com1.z0.glb.clouddn.com/2017-02-15_22-09-28.png)
 
+下面在添加一张动态图：
+
+<iframe width="800" height="600" frameborder="0" scrolling="no" src="//plot.ly/~luowenbo/9.embed"></iframe>
+
 扣非净利润尽管总额是不断上升的（2011年除外，受瘦肉精事件影响？），但增速也是一路向下。至此，我们似乎已经找到了其估值不断下降的理由。
 
 ![净利润](http://7xonmk.com1.z0.glb.clouddn.com/2017-02-15_22-14-19.png)
@@ -44,5 +48,3 @@ tags: 双汇发展 投资
 ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-02-15_22-27-15.png)
 
 此外，还有资产周转率下降，ROA保持稳定，杠杆比例下降并保持稳定，详见 [双汇发展基本面图示](https://www.lixinger.com/analytics/company/sz/000895/detail/fundamental/profit)
-
-To be continued!
