@@ -2,9 +2,7 @@
 layout: post
 title: 个人研究平台搭建升级版
 date: '2016-10-28 22:48'
-tags:
-  - 投资
-  - 写作
+tags: 投资 写作 Python
 ---
 
 # 研究平台
@@ -13,18 +11,26 @@ tags:
 - 使用各类量化平台或Excel作为数据平台（目前该平台只能用于Windows）
 - 使用`XMind`梳理研究思路和体系
 
-## `Python` `Pandas`
+## `Python`、`Pandas`与`plotly`
 
-在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了，倒是可以省不少事。
+在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了。**更重要的是，还可以对图像进行动态的更新，而不需要对原有文档进行更新，倒是可以省不少事。**
 
 `plotly`账号信息：
 
 > username: luowenbo  
 > API Key: Gn3DdXs0bNM3e5uecjB1
 
-### 示例：
+### 在文章中引用图像
 
-<iframe width="800" height="600" frameborder="0" scrolling="no" src="//plot.ly/~luowenbo/2.embed"></iframe>
+可以通过`iframe`技术来在文章中直接引用生产的图像文件。
+
+```html
+<iframe width="800" height="600" frameborder="0" scrolling="no"  src="//plot.ly/~luowenbo/2.embed"></iframe>
+```
+
+**并可以用[参数](http://help.plot.ly/embed-graphs-in-websites/#step-8-customize-the-iframe)来控制图像中的相关元素。**
+
+![](http://7xonmk.com1.z0.glb.clouddn.com/2017-03-04_13-05-47.png)
 
 # 写作平台
 

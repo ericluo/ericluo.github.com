@@ -13,6 +13,11 @@ tags: Python
 
 > 可以通过 `xs`、`minor_xs`或`major_xs`函数将三维的`Panel`转换为两维的`Dataframe`
 
+### 通过`plotly`来进行数据可视化
+
+首先是通过<http://plot.ly>网站来注册相应的账号，参见<{% post_url /2016/2016-10-28-个人研究平台搭建升级版 %}>。
+
+通过`Cufflinks`可以将`plotly`和`pandas`整合起来。具体例子参见<http://nbviewer.jupyter.org/gist/santosjorge/aba934a0d20023a136c2>、<http://nbviewer.jupyter.org/gist/santosjorge/f3b07b2be8094deea8c6>和<http://nbviewer.jupyter.org/gist/santosjorge/00ca17b121fa2463e18b>
 
 ### 学习资料
 
