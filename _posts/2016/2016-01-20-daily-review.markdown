@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 每日复盘
 categories: [每日复盘]
 ---

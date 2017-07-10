@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 雪球嘉年华观看笔记
 date: '2016-11-26 12:46'
 tags: null

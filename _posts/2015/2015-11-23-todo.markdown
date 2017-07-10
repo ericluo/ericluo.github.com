@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 个人研究平台搭建
 date: 2015-11-23T00:00:00.000Z
 categories: investment

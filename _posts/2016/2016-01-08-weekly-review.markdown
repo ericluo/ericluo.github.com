@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 每周回顾
 categories: [review]
 tags: review

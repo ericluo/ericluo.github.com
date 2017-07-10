@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 打新底仓配置策略
 date: '2016-11-10 21:56'
 tags: 投资

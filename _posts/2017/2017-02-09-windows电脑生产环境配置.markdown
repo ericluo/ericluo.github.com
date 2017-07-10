@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Windows电脑生产环节配置
 date: "2017-02-09 21:54"
 tags: sa
@@ -92,7 +92,11 @@ tags: sa
 
 - SSL CERTIFICATE UPDATES
 
-  `gem`安装过程中会碰到ssl cert相关问题时，需要对rubygems进行更新，参见http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages
+  `gem`安装过程中会碰到ssl cert相关问题时，需要对rubygems进行更新，参见 http://guides.rubygems.org/ssl-certificate-update/#installing-using-update-packages
+
+  此外，还要在Windows中设置环境变量
+
+  > SSL_CERT_FILE = %OneDrive%/cacert.pem
 
 # Python
 

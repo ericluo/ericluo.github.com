@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 2016年投资展望
 tags: 投资
 ---

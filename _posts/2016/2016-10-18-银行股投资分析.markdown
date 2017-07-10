@@ -1,6 +1,6 @@
 ---
 title: 银行股投资分析
-layout: post
+
 tags: 投资
 ---
 

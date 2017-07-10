@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 银行B脱困策略
 date: '2016-10-27 16:13'
 tags: 网格 投资

@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 2017年投资策略
 date: '2016-12-23 10:00'
 tags: 投资策略

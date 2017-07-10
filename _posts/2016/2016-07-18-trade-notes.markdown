@@ -1,6 +1,6 @@
 ---
 title: 投资笔记
-layout: post
+
 tags: 投资
 ---
 

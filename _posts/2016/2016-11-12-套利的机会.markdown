@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 套利的机会
 date: '2016-11-12 20:51'
 tags: 投资 套利

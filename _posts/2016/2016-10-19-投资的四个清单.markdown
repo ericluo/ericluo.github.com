@@ -1,6 +1,6 @@
 ---
 title: 投资的四个清单
-layout: post
+
 tags: 投资
 ---
 

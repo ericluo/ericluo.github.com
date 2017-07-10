@@ -1,6 +1,6 @@
 ---
 title: 宁波银行投资分析
-layout: post
+
 tags: investment
 ---
 

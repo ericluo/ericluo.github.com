@@ -1,6 +1,6 @@
 ---
 title: 投资笔记
-layout: post
+
 tags: diary
 ---
 释老毛:

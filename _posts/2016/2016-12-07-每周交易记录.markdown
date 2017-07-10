@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 每周交易记录
 date: '2016-12-07 21:18'
 tags: 每日复盘

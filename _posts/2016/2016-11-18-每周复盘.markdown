@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 每周复盘
 date: '2016-11-18 19:56'
 tags: 每周复盘

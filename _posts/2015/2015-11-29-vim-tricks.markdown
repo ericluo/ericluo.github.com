@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: VIM 学习笔记
 author: luowenbo
 tags: vim

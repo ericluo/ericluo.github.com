@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 海兴电力卖出逻辑
 date: '2016-11-18 09:42'
 tags: 投资

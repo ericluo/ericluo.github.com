@@ -1,5 +1,5 @@
 ---
-layout: "post"
+
 title: "每周复盘"
 date: "2017-02-21 16:19"
 categories: 投资

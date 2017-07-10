@@ -1,6 +1,6 @@
 ---
 title: 投资研究
-layout: post
+
 tags: 投资
 ---
 

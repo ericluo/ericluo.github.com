@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 2015年投资总结
 category: summary
 ---

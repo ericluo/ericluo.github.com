@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 煤炭股还有没有行情？
 date: '2016-11-03 20:27'
 tags: 每日复盘

@@ -1,5 +1,5 @@
 ---
-layout: "post"
+
 title: "B股投资研究"
 date: "2017-02-14 09:07"
 tags: 投资 B股

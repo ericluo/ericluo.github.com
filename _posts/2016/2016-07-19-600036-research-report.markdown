@@ -1,6 +1,6 @@
 ---
 title: 招商银行研究报告
-layout: post
+
 tags: 个股研究
 ---
 

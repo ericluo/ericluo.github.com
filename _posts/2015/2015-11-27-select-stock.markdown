@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 选股分析
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: atom编辑器设置
 date: '2016-10-26 11:05:06 +0800'
 tags: atom

@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 研报的写法
 date: '2016-11-16 20:53'
 tags: 投资

@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 大盘面临选择
 ---
 

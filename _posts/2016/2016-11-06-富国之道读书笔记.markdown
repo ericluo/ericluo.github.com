@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: 富国之道读书笔记
 date: '2016-11-06 11:43'
 tags: 读书笔记 投资

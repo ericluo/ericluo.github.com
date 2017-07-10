@@ -1,6 +1,6 @@
 ---
 title: VIM学习笔记
-layout: post
+
 tags: VIM 学习笔记
 ---
 

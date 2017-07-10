@@ -1,6 +1,6 @@
 ---
 title: literate programming with pweave
-layout: post
+
 ---
 
 # `Pweave` 安装

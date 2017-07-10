@@ -1,6 +1,6 @@
 ---
 title: Jupyter Notebook使用笔记
-layout: post
+
 tags: tips
 ---
 
