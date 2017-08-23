@@ -91,14 +91,5 @@ tags: jekyll
 
 正确的写法如下，其中指向文件目录为相对应`_posts`的相对路径，且文件名可以不用添加后缀名。而使用`link`这个tag的时候，文件路径是相对于根目录的，且文件名必须加后缀名。详细调用方法参见<http://jekyllrb.com/docs/templates/>
 
-    {% post_url file_name %}
-    {{ site.baseurl }}{% post_url file_name %}
-
-错误的写法：
-
-    {{ post_url filename }}
-
 但是，将错误的写法改正后，系统还是报原来的错误！经过网上查找相关解答，似乎是当前`Jekyll`的版本（3.3.1）的一个缺陷。~~待`GitHub Pages`升级后，试试新版本的`Jekyll`还有没有类似的问题。~~ **将 `github-pages`的版本升级到129以后（对应的`Jekyll`的版本升到到了3.4.3），改问题解决了。**
 {: .notice--danger}
-
-经测试，使用`{% link relative_url %}`没有问题:kissing_smiling_eyes:。使用`{% post_url filenmae %}`也没有问题，但是控制台上会报错，而且与其文档中要在文件名前添加子目录的说法也不一致。
