@@ -68,6 +68,8 @@ docs:
         url: /docs/jekyll
       - title: Python
         url: /docs/python/
+      - title: Ruby 
+        url: /docs/ruby/
       - title: Vim
         url: /docs/vim/
       - title: Git
