@@ -1,361 +1,160 @@
-# 关于这个博客主题
+# [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
 
-随着 jekyll 的版本升级，同时我也想重构我的旧版博客主题，因此在这个月对博客进行了重构加改版，这个仓库存放我的新博客，并且我也会一直使用这个主题。目前基本改版完成，后续可能还会有些细节上的修补。
+[![GitHub release](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://github.com/mmistakes/minimal-mistakes/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE.txt)
 
-**博客访问地址：[http://gaohaoyang.github.io/](http://gaohaoyang.github.io/)**。若您喜欢这个新的博客主题，请给我个star以示鼓励吧，欢迎大家使用。
+Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
-## 目录
+See what's new in the [CHANGELOG](CHANGELOG.md).
 
-* [预览图](#预览图)
-* [各部分详情](#各部分详情)
-    * [主页 Home](#主页-home)
-    * [归档页 Archives](#归档页-archives)
-    * [分类页 Categories](#分类页-categories)
-    * [标签页 Tags](#标签页-tags)
-    * [收藏页 Collections](#收藏页-collections)
-    * [展示页 Demo](#展示页-demo)
-    * [关于页 About](#关于页-about)
-    * [评论](#评论)
-    * [目录 Contents](#目录-contents)
-    * [代码高亮](#代码高亮)
-    * [灯泡效果](#灯泡效果)
-    * [移动端适配](#移动端适配)
-    * [Footer](#footer)
-    * [统计](#统计)
-* [博客主题使用方法](#博客主题使用方法)
-    * [1. 安装 ruby 和 jekyll 环境](#1-安装-ruby-和-jekyll-环境)
-    * [2. 复制博客主题代码](#2-复制博客主题代码)
-    * [3. 修改参数](#3-修改参数)
-        * [基本信息](#基本信息)
-        * [链接信息](#链接信息)
-        * [评论信息](#评论信息)
-        * [统计信息](#统计信息)
-    * [4. 写文章](#4-写文章)
-    * [5. 本地运行](#5-本地运行)
-    * [6. 发布到 GitHub](#6-发布到-github)
-* [捐助 donate](#捐助-donate)
-* [Update Log](#update-log)
-* [License](#license)
+:sparkles: Minimal Mistakes is now available as a [Ruby gem](https://rubygems.org/gems/minimal-mistakes-jekyll). Consult the [Quick-Start Guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) and [this blog post](https://mmistakes.github.io/minimal-mistakes/jekyll/gemified-theme-beta/) to learn how to upgrade.
 
-## 预览图
+[![Minimal Mistakes live preview][2]][1]
 
-先上预览图：
+[1]: https://mmistakes.github.io/minimal-mistakes/
+[2]: screenshot.png (live preview)
 
-主页
-![index](http://ww3.sinaimg.cn/large/7011d6cfjw1f3bdli86awj211k0oyqen.jpg)
+![layout examples](screenshot-layouts.png)
 
-文章页
-![post](http://ww4.sinaimg.cn/large/7011d6cfjw1f3bdmzb9v6j210p0j7gwn.jpg)
+## Notable Features
 
-## 各部分详情
+- "Gemified" for easier install/upgrading
+- Compatible with Jekyll 3.x and GitHub Pages
+- Support for Jekyll's built-in Sass/SCSS preprocessor
+- Several responsive layout options (single, archive index, splash, and paginated home page)
+- SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
+- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
+- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and custom).
+- [Google Analytics](https://www.google.com/analytics/) support.
+- UI localized text in English (default), Brazilian Portuguese, Chinese, French, German, Italian, Korean, Nepali (Nepalese), Russian, Spanish, and Turkish
 
-### 主页 Home
+## Demo Pages
 
-主页默认展示5篇文章的摘要部分，用户点击标题或阅读全文后进入文章页。右侧为近期文章、分类和标签3块区域，用户可以继续在这部分添加区域，只需修改`index.html`即可。
+| Name                                        | Description                                           |
+| ------------------------------------------- | ----------------------------------------------------- |
+| [Post with Header Image][header-image-post] | A post with a large header image. |
+| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
+| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
+| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
+| [Sample Collection Page][sample-collection] | Single page from a collection. |
+| [Categories Archive][categories-archive] | Posts grouped by category. |
+| [Tags Archive][tags-archive] | Posts grouped by tags. |
 
-### 归档页 Archives
+Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
 
-按照年份归档文章。
+[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
+[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
+[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
+[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
+[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
+[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
+[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
+[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
-### 分类页 Categories
+## Usage
 
-按照文章的分类，显示文章。
+For detailed instructions on how to configure, customize, add content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
-### 标签页 Tags
+**Note:** Gem version of the theme requires Jekyll v3.3+ and is not currently supported on [GitHub Pages](https://pages.github.com/). You can still use the theme with GitHub Pages, you'll just need to install using the old "[repo fork method](https://mmistakes.github.io/minimal-mistakes/docs/installation/)".
 
-按照文章的标签显示文章。
+## Quick Start
 
-### 收藏页 Collections
+Add this line to your Jekyll site's `Gemfile`:
 
-本页是用`markdown`写的，用户可以收藏自己喜欢的文章链接。
-
-### 展示页 Demo
-
-使用 [Masonry](http://masonry.desandro.com/) 重写了瀑布流布局，响应式布局，更好的交互体验。
-
-### 关于页 About
-
-对个人和对本站的介绍，使用`markdown`写的。
-
-### 评论
-
-支持 [多说评论](http://duoshuo.com/) 和 [disqus](https://disqus.com/) 评论。
-
-只需要在 `_config.yml` 修改相应的配置`short_name`即可，如下：
-
-```yml
-# comments
-# two ways to comment, only choose one, and use your own short name
-# 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #xxx
-disqus_shortname: xxx
+```ruby
+gem "minimal-mistakes-jekyll"
 ```
 
-### 目录 Contents
+Add this line to your Jekyll site's `_config.yml` file:
 
-页面滚动时目录固定在屏幕右侧，若目录高度超出屏幕高度，目录产生滚动条。
-
-### 代码高亮
-
-随着 jekyll 的升级，目前代码高亮使用风格与 github 上的 markdown 写法一致。
-
-### 灯泡效果
-
-![light](http://ww3.sinaimg.cn/large/7011d6cfjw1f3be6y4vp3j209i02rweg.jpg)
-
-可以看到导航按钮高亮时，下面的阴影效果，我把这个称为灯泡效果。
-
-### 移动端适配
-
-完美适配移动端。
-
-![mobile](http://ww4.sinaimg.cn/large/7011d6cfjw1f3bebnzxkpj20ah0fzgp4.jpg)
-
-### Footer
-
-**欢迎使用这个主题，使用时请保留 footer 上的模板主题来源。** Theme designed by [HyG](https://github.com/gaohaoyang).
-![footer](http://ww3.sinaimg.cn/large/7011d6cfjw1f3bepd8002j20hl02ct95.jpg)
-
-关于旧版博客，我不再维护，同时我把代码转移到了另一个仓库，见 [Gaohaoyang/old-blog](https://github.com/Gaohaoyang/old-blog)。
-
-### 统计
-
-博客支持百度统计和 Google Analytics，只需在`_config.yml`中配置响应的id即可，代码如下。
-
-```yml
-# statistic analysis 统计代码
-# 百度统计 id，将统计代码替换为自己的百度统计id，即
-# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
-# xxxxx字符串
-baidu_tongji_id: xxxxxxxxxxxx
-google_analytics_id: UA-xxxxxxxx # google 分析追踪id
+```yaml
+theme: minimal-mistakes-jekyll
 ```
 
-## 博客主题使用方法
+Then run Bundler to install the theme gem and dependencies:
 
-欢迎使用这个主题，以下简单说一下使用方法。
-
-### 1. 安装 ruby 和 jekyll 环境
-
-这一步和第5步主要是为了让博客系统在本地跑起来，如果不想在本地运行，可以无视这两步，但我还是强烈建议试着先在本地跑起来，没有什么问题后再推送的 GitHub 上。
-
-Windows 用户可以直接使用 [RubyInstaller](http://rubyinstaller.org/) 安装 ruby 环境。后续的操作中可能还会提示安装 DevKit，根据提示操作即可。
-
-建议使用 [RubyGems 镜像- Ruby China](https://gems.ruby-china.org/) 安装 jekyll。
-
-安装 jekyll 命令如下
-
-```
-gem install jekyll
+```bash
+bundle install
 ```
 
-详情可以查看 jekyll 官网。[https://jekyllrb.com/](https://jekyllrb.com/) 或 中文翻译版 jekyll 官网[http://jekyllcn.com/](http://jekyllcn.com/) （中文文档翻译落后于英文官网，有兴趣有时间的小伙伴可以参与翻译，为开源世界贡献一份力哦~）
+To update the theme run `bundle update`.
 
-在 mac OS X El Capitan 系统下安装可能会出现问题，解决方案详情见 jekyll 官网: [ https://jekyllrb.com/docs/troubleshooting/#jekyll-amp-mac-os-x-1011]( https://jekyllrb.com/docs/troubleshooting/#jekyll-amp-mac-os-x-1011)
-
-对 jekyll 本身感兴趣的同学可以看看 jekyll 源码: [https://github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
-
-![jekyll logo](http://jekyllcn.com/img/logo-2x.png)
-
-### 2. 复制博客主题代码
-
-可以直接 clone 、下载 或 fork 这个仓库的代码即可
-
-### 3. 修改参数
-
-主要修改 `_config.yml` 中的参数和自己的网站小图`favicon.ico`
-
-`_config.yml`文件中
-
-#### 基本信息
-
-主要用于网站头部header。
-
-```yml
-# Site settings
-title: HyG
-brief-intro: Front-end Dev Engineer
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gaohaoyang.github.io" # the base hostname & protocol for your site
-```
-
-#### 链接信息
-
-主要用于网站底部footer。
-
-```yml
-# other links
-twitter_username: gaohaoyang126
-facebook_username: gaohaoyang.water
-github_username:  Gaohaoyang
-email: gaohaoyang126@126.com
-weibo_username: 3115521wh
-zhihu_username: gaohaoyang
-
-description_footer: 本站记录我前端之旅的沿途风景！
-```
-
-#### 评论信息
-
-获取`short_name`的方法：
-
-访问 https://disqus.com/ 或 http://duoshuo.com/ 根据提示操作即可。
-
-```yml
-# comments
-# two ways to comment, only choose one, and use your own short name
-# 两种评论插件，选一个就好了，使用自己的 short_name
-duoshuo_shortname: #hygblog
-disqus_shortname: gaohaoyang
-```
-
-运行成功后，可以在 disqus 或 多说 的后台管理页看到相关信息。
-
-#### 统计信息
-
-获取 百度统计id 或 Google Analytics id 的方法：
-
-访问 http://tongji.baidu.com/ 或 https://www.google.com/analytics/ 根据提示操作即可。当然，如果不想添加统计信息，这两个参数可以不填。
-
-```yml
-# statistic analysis 统计代码
-# 百度统计 id，将统计代码替换为自己的百度统计id，即
-# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
-# xxxxx字符串
-baidu_tongji_id: cf8506e0ef223e57ff6239944e5d46a4
-google_analytics_id: UA-72449510-4 # google 分析追踪id
-```
-
-成功后，进入自己的百度统计或 Google Analytics 后台管理，即可看到网站的访问量、访客等相关信息。
-
-### 4. 写文章
-
-`_posts`目录下存放文章信息，文章头部注明 layout(布局)、title、date、categories、tags、author(可选)，如下：
-
-```
 ---
 
-title:  "对这个 jekyll 博客主题的改版和重构"
-date:   2016-03-12 11:40:18 +0800
-categories: jekyll
-tags: jekyll 端口 markdown Foxit RubyGems HTML CSS
-author: Haoyang Gao
+## Contributing
+
+Having trouble working with the theme? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
+
+Minimal Mistakes has been designed as a base for you to customize and fit your site's unique needs. Please keep this in mind when requesting features and/or submitting pull requests. If it's not something that most people will use, I probably won't consider it. When in doubt ask. 
+
+This goes for author sidebar links and "share button" additions -- I have no intention of merging in every possibly option, the essentials are there to get you started :smile:.
+
+### Pull Requests
+
+When submitting a pull request:
+
+1. Clone the repo.
+2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`) and describe the feature or fix.
+3. Open a pull request on GitHub.
+
+Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
+
+## Development
+
+To set up your environment to develop this theme, run `bundle install`.
+
+To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
+
 ---
-```
 
-下面这两行代码为产生目录时使用
-```
-* content
-{:toc}
-```
+## Credits
 
-文章中存在的4次换行为摘要分割符，换行前的内容会以摘要的形式显示在主页Home上，进入文章页不影响。
+### Creator
 
-换行符的设置见配置文件`_config.yml`的 excerpt，如下：
+**Michael Rose**
 
-```yml
-# excerpt
-excerpt_separator: "\n\n\n\n"
-```
+- <https://mademistakes.com>
+- <https://twitter.com/mmistakes>
+- <https://github.com/mmistakes>
 
-使用 markdown 语法写文章。
+### Icons + Demo Images:
 
-代码风格与 GitHub 上 README 或 issue 中的一致。使用3个\`\`\`的方式。
+- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+- [Unsplash](https://unsplash.com/)
 
-### 5. 本地运行
+### Other:
 
-本地执行
+- [Jekyll](http://jekyllrb.com/)
+- [jQuery](http://jquery.com/)
+- [Susy](http://susy.oddbird.net/)
+- [Breakpoint](http://breakpoint-sass.com/)
+- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
+- [FitVids.JS](http://fitvidsjs.com/)
+- Greedy Navigation - [lukejacksonn](http://codepen.io/lukejacksonn/pen/PwmwWV)
+- [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll)
 
-```
-jekyll s
-```
-
-显示
-
-```
-Configuration file: E:/GitWorkSpace/blog/_config.yml
-            Source: E:/GitWorkSpace/blog
-       Destination: E:/GitWorkSpace/blog/_site
- Incremental build: disabled. Enable with --incremental
-      Generating...
-                    done in 6.33 seconds.
-  Please add the following to your Gemfile to avoid polling for changes:
-    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
- Auto-regeneration: enabled for 'E:/GitWorkSpace/blog'
-Configuration file: E:/GitWorkSpace/blog/_config.yml
-    Server address: http://127.0.0.1:4000/
-  Server running... press ctrl-c to stop.
-```
-
-在本地访问 localhost:4000 即可看到博客主页。
-
-若安装了 Foxit 福昕pdf阅读器可能会占用4000端口，关闭 Foxit服务 或切换 jekyll 端口即可解决。详情见文章：[对这个 jekyll 博客主题的改版和重构](http://gaohaoyang.github.io/2016/03/12/jekyll-theme-version-2.0/)
-
-若正在使用全局代理，可能会报错502，关闭全局代理即可。
-
-### 6. 发布到 GitHub
-
-没什么问题，推送到自己的博客仓库即可。
-
-## 捐助 donate
-
-您也可以捐助我喝杯咖啡！感谢！
-
-支付宝
-
-![alipay](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bk8ikzoij20740743z5.jpg)
-
-微信
-
-![wechat](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bkdw3bslj206z06q3z6.jpg)
-
-感谢捐助的小伙伴！！！
-
-* 2016.07.11 收到 彦风 ¥6.66 捐赠
-* 2016.07.07 收到 Klci ¥2.50 捐赠
-* 2016.05.08 收到 1057 ¥10.57 捐赠
-* 2016.05.07 收到 吴林 ¥2 捐赠
-* 2016.04.29 收到 北归 ¥10 捐赠
-* 2016.04.28 收到 魏楚阳_Brian ¥2 捐赠
-* 2016.04.28 收到 薛彬 ¥8.8 捐赠
-
-
-## Update Log
-
-### 2016.6.20
-
-* `[+]` 在文章页中添加上一篇和下一篇文章链接。
-* `[^]` 修改 font-family 顺序，避免微软雅黑将单引号解析为全角。
-* `[^]` 修复标签云算法中被除数为零的 bug。[#26](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/26), [#28](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/28), [#30](https://github.com/Gaohaoyang/gaohaoyang.github.io/issues/30)
-
-### 2016.5.11 v2.0.1
-
-* `[^]` 优化代码，将页面中的大段评论相关代码抽离出来，放入`comments.html`
-* `[+]` 添加百度统计和Google分析代码，在`_config.yml`中配置相关参数即可
-* `[+]` 更新文档，添加博客主题使用方法，便于上手
-* `[+]` 添加了`favicon.ico`
-* `[^]` 修复 bug，目录太长时，滚动到最底部时隐藏到footer下面。修复后长目录在滚动到底部时使用`position:absolute`
-* `[^]` 修改目录区的滚动条样式（仅针对`webkit`内核浏览器）
-* `[^]` 修改 demo 页中 disqus 评论区 a 标签的颜色 bug，修改 blockqoute 中 p 标签的 margin
-* `[+]` 添加不蒜子计数功能，在footer上显示访问量
-* `[+]` 添加回到顶部功能
-
-### 2016.4.27 v2.0.0
-
-* `[^]` 基于 jekyll 3.1.2 重构了所有代码
-* `[+]` 主页添加了摘要，在正文中使用4个换行符来分割，可在`_config.yml`中修改
-* `[+]` 主页添加了近期文章、分类列表和标签云
-* `[+]` 主页导航区做了视觉优化，阴影效果
-* `[+]` 增加了归档、标签和分类页面
-* `[+]` 增加了收藏页面
-* `[+]` 评论插件可以选择 disqus 或 多说，直接在`_config.yml`中修改
-* `[+]` 适配移动端
-* `[+]` 页面滚动时，文章目录固定在右侧
-* `[+]` 页面内容较少时，固定 footer 在页面底部
-* `[^]` 使用 GitHub 风格的代码高亮写法，即\`\`\`的写法，去除`highlight.js`代码高亮插件的使用
-* `[^]` 使用 Masonry 重写了 Demo 页中的瀑布流布局，响应式交互体验更好
-* `[-]` 去除了 jQuery 和 BootStrap，使得加载速度更快
+---
 
 ## License
 
-[MIT License](https://github.com/Gaohaoyang/gaohaoyang.github.io/blob/master/LICENSE.md)
+The MIT License (MIT)
+
+Copyright (c) 2017 Michael Rose
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

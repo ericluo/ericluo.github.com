@@ -46,8 +46,8 @@ frontMatterDate: "{year}-{month}-{day} {hour}:{minute}"
 # front matter template
 frontMatter: """
 ---
-layout: "{layout}"
 title: "{title}"
+author: MrAlpha
 date: "{date}"
 tags:
 ---
@@ -154,9 +154,9 @@ footnoteInsertPosition: "paragraph"
 # table default alignments: "empty", "left", "right", "center"
 tableAlignment: "empty"
 # insert extra pipes at the beginning and the end of table rows
-tableExtraPipes: true
+tableExtraPipes: false
 
 # template variables is a key-value map used in template string
 # e.g. you can have `posts/{author}/{year}` in newPostFileName after you set author.
 templateVariables:
-  author: "Mr. Alpha"
+  author: "MrAlpha"

@@ -1,6 +1,6 @@
 ---
 title: quant trade
-
+layout: post
 tags: 投资
 ---
 
