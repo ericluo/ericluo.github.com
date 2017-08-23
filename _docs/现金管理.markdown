@@ -1,0 +1,13 @@
+---
+title: 现金管理
+author: MrAlpha
+permalink: /docs/money_mgmt/
+tags: 现金管理
+categories: 投资
+---
+
+## 货币型基金
+
+流动性较好的交易型货基有两个：银华日利和华宝添益。
+
+**周五申购交易性货基没有周末收益**

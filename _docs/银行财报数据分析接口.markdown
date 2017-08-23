@@ -1,0 +1,36 @@
+---
+permalink: /docs/bank_report_analysis/
+categories: 投资
+author: MrAlpha
+tags: 银行
+---
+
+今天，在平安银行2016年年报分析中，发现了将`资产减值损失`科目放在了`营业支出`之外，与其他银行财报的处理方式不一致。其他银行`营业支出`科目包括了`税金及附加`、`业务及管理费`和`资产减值损失`三部分。因此，不同银行之间的`营业收入`口径不一致，但是可以按照统一的原则还原后进行比较。
+{: .notice--warning}
+
+| 数据表  | 科目名称           | 数据项                         |
+| ---- | -------------- | --------------------------- |
+| 利润表  | 营业收入           | operating_revenue           |
+| 利润表  | 利息净收入          |                             |
+| 利润表  | 手续费及佣金净收入      |                             |
+| 利润表  | 公允价值变动收益       |                             |
+| 利润表  | 投资收益           | investment_income           |
+| 利润表  | 汇兑净收益          | exchange_gains_or_losses    |
+| 利润表  | 其他业务净收入        | other_operating_income      |
+| 利润表  | 其他净收入          |                             |
+| 利润表  | 营业税及附加         | sales_tax                   |
+| 利润表  | 业务及管理费         | ga_expense                  |
+| 利润表  | 资产减值损失         | asset_depreciation          |
+| 利润表  | 营业利润           | profit_from_operation       |
+| 利润表  | 营业外收入          | non_operating_revenue       |
+| 利润表  | 营业外支出          | non_operating_expense       |
+| 利润表  | 营业外收支净额        | non_operating_net_profit    |
+| 利润表  | 利润总额           | profit_before_tax           |
+| 利润表  | 所得税            | income_tax                  |
+| 利润表  | 净利润            | net_profit                  |
+| 利润表  | 归属于本行股东的净利润    | net_profit_parent_company   |
+| 利润表  | 基本每股收益         | basic_earnings_per_share    |
+| 利润表  | 其他综合收益         | other_income                |
+| 利润表  | 综合收益总额         | total_income                |
+| 利润表  | 归属于本行股东的综合收益总额 | total_income_parent_company |
+| 利润表  | 归属于少数股东的综合收益总额 | total_income_minority       |
