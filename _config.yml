@@ -79,7 +79,7 @@ baidu_tongji_id: 4a3ff0f6f6602b52b3bdeaad5c92ad51  # 百度访问统计
 author:
   name             : "MrAlpha"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "日拱一卒"
+  bio              : "日拱一卒 不期而至"
   location         : "天南海北"
   email            :
   uri              :
@@ -178,7 +178,7 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
