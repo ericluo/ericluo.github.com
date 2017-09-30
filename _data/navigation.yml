@@ -41,6 +41,8 @@ docs:
         url: /docs/real_estate/
       - title: 保险业投资研究
         url: /docs/insurance_study/
+      - title: 如何分析保险公司
+        url: /docs/how_to_study_insurance/
 
   - title: 研究平台
     children:
