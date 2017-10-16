@@ -10,10 +10,7 @@ main:
     url: /about/
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
 archive:
   - title: "归档检索"
     children:
@@ -48,9 +45,6 @@ docs:
     children:
       - title: 个人研究平台简介
         url: /docs/study_guide/
-      - title: Windows安装配置
-        url: /docs/windows/
-
 
   - title: 投资体系
     children:
