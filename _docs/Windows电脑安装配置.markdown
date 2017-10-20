@@ -42,6 +42,10 @@ Windows上进行软件开发一直都是种种坑，但是现在的办公环境�
 
 编辑器使用`Atom`，安装好编辑器后，首先安装的插件是`sync-settings`，相关的设置可以参考README文件。接下来就可以通过该插件来同步不同计算机之间的个性化设置信息了。
 
+同步后会安装`vim-mode-plus`和`vim-mode-plus-auto-ime`插件。后一个用于在`vim-mode-plus`中从`insert-mode`切换到`normal-mode`时，自动将输入法设置为英文输入法。
+
+**Notice:** 需要在`Windows`中安装两种语言环境：中文和英文。语言环境切换使用了外部`Pyton`脚本(ime_helper)。
+
 # Git
 
 ## 下载`Git`的客户端软件
