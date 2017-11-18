@@ -32,11 +32,9 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
 
 ## `Pandas`
 
-可以通过`set_option`相关函数来对`Pandas`的输入和显示效果进行设置，如通过 `display.precision` 控制项来设置浮点数显示的位数。
+### 浮点数显示格式控制
 
-```python
-  pd.set_option('display.precision', 2) # default to 6
-```
+### 数据结构转换
 
 `Pandas`中常用的对象主要有`DataFrame`、`Series`和`Panel`，3个不同对象之间提供了相应的方法可以相互转化。
 
@@ -70,12 +68,36 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
 
 ### 显示格式控制
 
+- 全局显示格式控制
+
+可以通过`set_option`相关函数来对`Pandas`的输入和显示效果进行设置，如通过 `display.precision` 控制项来设置浮点数显示的位数。
+
+```python
+  pd.set_option('display.precision', 2) # default to 6
+```
+
+- 基于`DataFrame`的显示格式控制
+
 可以通过`df.style`属性来对`dataframe`的显示格式进行控制，参见[DataFrame.style](http://pandas.pydata.org/pandas-docs/stable/style.html#)
 
 如下面的代码可以设置以保留两位小数，以逗号为千分位字符的百分比格式来显示：
 
+```python
     df.style.format("{:,.2%}")
     df.style.format({columnlabel: "{:,.2%}"})
+```
+
+### 根据余额求单月发生额
+
+假设d1是某个指标的`dataframe`，其中`index`是时间序列，`columns`是对应不同机构的某个指标的余额(`cumsum`),现在需要计算出对应的单月发生额，代码如下：
+
+```python
+d2 = d1.set_index([d1.index.year, d1.index.month])
+d2.index.names = ['年份', '月份']
+d2.groupby(level='年份').diff().fillna(d2)
+```
+
+其中`diff`会将第一行（1月）的值变换成`NA`,这不是我们想要的，因此需要使用`fillna`来对`NA`值进行替换。
 
 ### [`plotly`](https://plot.ly/pandas/)
 
