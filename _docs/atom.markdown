@@ -47,7 +47,7 @@ permalink: /docs/atom/
 
   对于拷贝的url可以通过coffeescript `decodeURI 'encoded url'` 来对其进行解码，然后`Execute coffeeScript`即可。
 
-- gist-it 在`Atom`中分享代码片段到<https://gist.github.com>
+- gist 在`Atom`中分享代码片段到<https://gist.github.com>
 
 - autocomplete-emojis 支持在`Atom`中直接自动完成并预览对应的emoji。
 
@@ -60,7 +60,7 @@ permalink: /docs/atom/
 
 - Personal Access Token
 
-需要从`Github`网站上重新生成Token
+需要从`Github`网站上重新生成Token: (218eb08ca8469bc1ce785df71901a6878e832951)
 
 - Gist id
 
