@@ -11,6 +11,7 @@ tags: 投资 写作 Python
 - 使用`Python`作为数据分析工具，包括`Jupyter`、`Pandas`、`Plotly`等
 - 使用`Ricequant`等各类量化平台或Excel作为数据平台
 - 使用`XMind`梳理研究思路和体系
+- 使用 [`SmallPDF`](https://smallpdf.com/cn) 处理 `PDF` 中表格数据的提取。借助于<https://smallpdf.com/cn/pdf-to-excel>提供的云服务，可以将 `PDF` 中的表格转换为 `Excel` 文件。
 
 # 写作平台
 
