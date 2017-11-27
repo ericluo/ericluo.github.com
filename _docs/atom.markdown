@@ -15,6 +15,8 @@ permalink: /docs/atom/
 > registry=https://registry.npm.taobao.org/  
 > strict-ssl=false
 
+{% gist ericluo/9224d6472c38b76e68121528839fdba5 %}
+
 # 使用插件
 
 `Atom`自身就是使用插件架构堆积而成，除其官方自带的插件外，比较好用的社区插件如下：
