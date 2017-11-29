@@ -66,6 +66,8 @@ docs:
         url: /docs/jekyll
       - title: Python
         url: /docs/python/
+      - title: Jupyter
+        url: /docs/jupyter/
       - title: Ruby
         url: /docs/ruby/
       - title: Vim
