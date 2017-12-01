@@ -34,6 +34,20 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
 
 ### 浮点数显示格式控制
 
+使用 `df.style.fortmat` 可以控制 `DataFrame` 中的不同列的显示格式。
+
+### 时间序列处理
+
+`Pandas` 提供了一系列的工具函数来辅助进行时间序列数据的处理，如：
+
+- pd.date_range (时刻序列 timestamp)
+- pd.period_range (时期序列)
+
+时刻与时期序列之间还可以相互转化，相关文档参见 <http://blog.csdn.net/pipisorry/article/details/52209377>
+
+- ts.to_period()
+- ps.to_timestamp()
+
 ### 数据结构转换
 
 `Pandas`中常用的对象主要有`DataFrame`、`Series`和`Panel`，3个不同对象之间提供了相应的方法可以相互转化。
@@ -99,7 +113,7 @@ d2.groupby(level='年份').diff().fillna(d2)
 
 其中`diff`会将第一行（1月）的值变换成`NA`,这不是我们想要的，因此需要使用`fillna`来对`NA`值进行替换。
 
-### [`plotly`](https://plot.ly/pandas/)
+## [`plotly`](https://plot.ly/pandas/)
 
 在使用`Pandas`进行数据分析研究时，需要用到`dataframe.plot`的函数来进行绘图，但是用该函数绘图使用中文时需要做特殊的设置，非常不方便。网上看到有推荐使用`plotly`的，该包可以将生产的图片自动地保存到云上，这样在文档中直接插入对应的链接就可以了。**更重要的是，还可以对图像进行动态的更新，而不需要对原有文档进行更新，倒是可以省不少事。**
 
@@ -127,7 +141,7 @@ plotly.offline.iplot(fig)
 
 ```
 
-#### 在文章中引用图像
+### 在文章中引用图像
 
 可以通过`iframe`技术来在文章中直接引用生产的图像文件。
 
@@ -139,7 +153,7 @@ plotly.offline.iplot(fig)
 
 ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-03-04_13-05-47.png)
 
-#### traces & layout
+### traces & layout
 
 `plotly`中的两类对象是`traces` 和 `layout`。[API Reference](https://plot.ly/python/reference/#layout)
 
@@ -182,9 +196,32 @@ figure = go.Figure(data=data, layout=layout)
 py.plot(figure, filename='api-docs/reference-graph')
 ```
 
-#### [cufflinks](https://github.com/santosjorge/cufflinks)
+### 设置 `YAxis` 的显示格式（如将浮点数显示为百分数）
 
-其调用方法为: `df.iplot(xTitle='', yTitle='', title='', layout='')`
+可以通过设置 `YAxis` 中的 `tickformat` 来实现
+
+```python
+  figure['layout']['yaxis']['tickformat'] = ".2%"
+  py.plot(figure)
+```
+
+其中 `tickformat` 的具体格式参见[`D3`中的相关定义] <https://github.com/d3/d3-format/blob/master/README.md#locale_format>。**注意，其格式不是 `Python` 中的规范，而是 `D3` 的规范。**
+
+### [cufflinks](https://github.com/santosjorge/cufflinks)
+
+其调用方法为: `df.iplot(xTitle='', yTitle='', title='', layout='')`。 `cufflinks` 是基于 `plotly` 之上的简单封装，其自身并没有提供许多便捷的 `API`。因此，在需要对生产的图形进行个性化设置时，需要对底层的 `plotly` 数据接口（结构）进行设置，如下所示：
+
+```python
+  figure = df.iplot(asFigure=True)
+  # 显示 `figure` 的数据结构
+  print figure.to_string()
+
+  figure['data'] = ...
+  figure['layout']['legend'] = ...
+
+  # 完成个性化设置后，生成并显示图形
+  cf.iplot(figure)
+```
 
 `cufflinks`也提供了一些方法来生产`subplots`，如：
 
@@ -195,7 +232,7 @@ figs=[df[df['X']==d][['Col1','Col2']].iplot(kind='box',asFigure=True) for d in p
 cf.iplot(cf.subplots(figs))
 ```
 
-##### 饼图
+#### 饼图
 
 在使用饼图之前，一定要想想是否合适，可能用其他的图(如柱状头bar)具有更好的表现力。
 
