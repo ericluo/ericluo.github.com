@@ -16,6 +16,87 @@ tags: Python
 
 ### 函数 `function`
 
+#### Iterators
+
+内置 `iter()` 函数可以将一个**可迭代**对象转化为支持 `__next__()` 协议的对象, 即转化后可以通过 `next(it)` 来迭代出下一个的元素。
+
+支持迭代器的数据类型有：dict, list, tuples, string, file, set, etc
+
+#### Generator expression(genexps) and list comprehensions(listcomps)
+
+```python
+( expression for expr in sequence1
+              if condition1
+              for expr2 in sequence2
+              if condition2
+              for expr3 in sequence3 ...
+              if condition3
+              for exprN in sequenceN
+              if conditionN )
+```
+
+#### Generators
+
+#### Build functions
+
+map, filter, enumerate, any, all, zip,
+
+#### itertools module
+
+- 基于一个迭代器生成一个新的迭代器
+
+```python
+itertools.count(10)
+itertools.cycle([1, 2, 3])
+itertools.repeat(elem, [n])
+itertools.chain(iterA, iterB)
+itertools.islice(iter, [start], stop, [step])
+itertools.tee(iter, [n])
+```
+
+- 对迭代器中的元素应用函数
+
+`itertools.starmap(func, iter)` 用于使用迭代器中的元素来调用函数。如：
+
+```python
+itertools.starmap(os.path.join,
+  [('/bin', 'python'), ('/usr', 'bin', 'java'),
+  ('/usr', 'bin', 'perl'), ('/usr', 'bin', 'ruby')])
+=>
+
+/bin/python, /usr/bin/java, /usr/bin/perl, /usr/bin/ruby
+```
+
+常见的函数包为 `operator`， 如 `operator.add(a, b)` 等。
+
+- 选择迭代器中元素
+
+```python
+itertools.filterfalse(predicate, iter)
+itertools.takewhile(predicate, iter)
+itertools.dropwhile(predicate, iter)
+itertools.compress(data, selectors)
+```
+- 组合函数
+
+```python
+itertools.combinations(iterable, r) # 组合
+itertools.permutations(iterable, r=None) # 排列
+```
+
+- 元素分组
+
+`itertools.groupby(iter, key_func=None)` 基于 `key_func` 对迭代器中的元素分组。
+
+#### The functools module
+
+```python
+functools.partial(func, arg1, arg2)
+functools.reduce(func, iter, [initial_value]) # 返回最终值
+
+itertools.accumulate(iter, func) # 不返回最终值，而是返回每一个中间结果的迭代器
+
+```
 ## 时间转换
 
 在Python中经常要用到的时间格式的转换，如从字符串转换为日期格式，或是从日期格式转换为字符串，还有时候需要将整数数值型转换为字符串。可以借助于标准库 `datetime`中的相关函数来实现。
