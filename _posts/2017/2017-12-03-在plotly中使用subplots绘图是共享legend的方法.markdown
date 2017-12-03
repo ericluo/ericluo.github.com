@@ -1,5 +1,5 @@
 ---
-title: "在plotly中使用subplots绘图是共享legend的方法"
+title: "在plotly中使用subplots绘图时共享legend的方法"
 author: MrAlpha
 date: "2017-12-03 10:57"
 tags: pandas plotly python
@@ -13,7 +13,7 @@ tags: pandas plotly python
 
 在使用 `subplots` 进行绘图时，控制第一个（或者某个特定）的 `figure` 中所有 `trace` 显示图例，而其他的所有 `trace` 中均不显示图例。就可以达到目标了。
 
-但是，上述做法有一个弊端。不显示图例的图形中无法图例进行交互控制。如下图所示，可以通过点击某个或某些图例，控制显示的 `trace` 。
+但是，上述做法有一个弊端。不显示图例的图形中无法图例进行交互控制。如下图所示，可以通过点击某个或某些图例，控制显示的 `trace` 。图中，点击中信银行、浦发银行和兴业银行可以在图形中动态调整是否显示对应的数据。
 
 ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-12-03_11-15-05.jpg)
 
