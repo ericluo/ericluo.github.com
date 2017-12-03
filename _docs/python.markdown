@@ -37,7 +37,9 @@ tags: Python
 
 #### Generators
 
-#### Build functions
+`yield`
+
+#### Build-in functions
 
 map, filter, enumerate, any, all, zip,
 
