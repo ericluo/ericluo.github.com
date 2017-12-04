@@ -184,6 +184,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-remote-theme
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -194,6 +195,7 @@ whitelist:
   - jemoji
 
 
+remote_theme: "mmistakes/minimal-mistakes"
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
