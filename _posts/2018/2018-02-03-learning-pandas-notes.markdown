@@ -61,6 +61,17 @@ tags: 读书笔记 Python
   pd.Series(np.random.normal(size = 5))
 
 ```
+
+### DataFrame
+
+#### 删除 `columns`
+
+- del ex. `del dataframe[column]` 直接从 `dataframe` 中删除 `Series`
+
+- pop() 删除 `Series` 并从 `dataframe` 中返回该 `Series`
+
+- drop(labels, axis = 1) 删除对应的 `columns`，生成并返回一个新的 `dataframe`
+
 ## 日期数据转换
 
 在从外部文件中使用 `pd.read_csv(filename, parse_dates = ['column1', 'column2'])` 中的 `parse_dates` 参数来制定相应的列为日期类型。
