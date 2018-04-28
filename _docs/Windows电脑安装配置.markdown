@@ -46,6 +46,12 @@ Windows上进行软件开发一直都是种种坑，但是现在的办公环境�
 
 **Notice:** 需要在`Windows`中安装两种语言环境：中文和英文。语言环境切换使用了外部`Pyton`脚本(ime_helper)。
 
+## 等宽字体
+
+在 `Atom` 中使用和编辑表格时，使用非等宽字体将导致单元格之间无法对齐。在 `GitHub` 上提供了一套可以用于 `Windows` 的等宽字体，字体名称为 `NotoSansMonoCJKsc`。下载地址如下： <https://github.com/googlei18n/noto-cjk>。
+
+下载后，将对于的字体文件拷贝到 `C:\Windows\Fonts` 目录下即可。
+
 # Git
 
 ## 下载`Git`的客户端软件
