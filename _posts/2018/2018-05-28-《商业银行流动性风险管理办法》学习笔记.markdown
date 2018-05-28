@@ -13,7 +13,7 @@ tags: 银行股 学习笔记
 
 ### 流动性覆盖率
 
-when \(a \ne 0\), this is a \(ax^2 + bx + c = 0\)
+when $a \ne 0$, this is a $ax^2 + bx + c = 0$
 
 $$ 流动性覆盖率 = {合格优质流动性资产 \over 未来30天现金净流出量} $$
 
