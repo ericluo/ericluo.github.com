@@ -13,3 +13,14 @@
 {% else %}
   {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
 {% endif %}
+
+{% if post.last_modified_at %}
+  {% assign cdate = post.last_modified_at %}
+{% elsif page.last_modified_at %}
+  {% assign cdate = page.last_modified_at %}
+{% elsif post.date %}
+  {% assign cdate = post.date %}
+{% elsif page.date %}
+  {% assign cdate = page.date %}
+{% endif %}
+<i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>{{ cdate | date: "%Y-%m-%d"}}
