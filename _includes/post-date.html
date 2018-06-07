@@ -2,7 +2,9 @@
   {% assign cdate = post.last_modified_at %}
 {% elsif page.last_modified_at %}
   {% assign cdate = page.last_modified_at %}
+{% elsif post.date %}
+  {% assign cdate = post.date %}
 {% else %}
-  {% assign cdate = post.date || page.date %}
+  {% assign cdate = page.date %}
 {% endif %}
-<i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>{{ cdate | date: "%Y%m%d"}}
+<i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>{{ cdate | date: "%Y-%m-%d"}}
