@@ -1,0 +1,6 @@
+<i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>
+{% if post.last_modified_at %}
+  {{ post.last_modified_at | date: "%Y-%m-%d" }}
+{% elsif page.date %}
+  {{ post.date | date: "%Y-%m-%d" }}
+{% endif %}
