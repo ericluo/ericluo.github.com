@@ -199,7 +199,11 @@ whitelist:
 minimal_mistakes_skin: "sunrise" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum"
 search: true
 search_provider: algolia
-
+algolia:
+  application_id: 4B4YGJTNTN
+  index_name: homepage
+  search_only_api_key: fb3bc7572644953c2a9d7aaaa393a865
+  powered_by: true #(default), false
 
 # Archives
 #  Type
