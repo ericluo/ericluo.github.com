@@ -198,6 +198,7 @@ whitelist:
 # remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "sunrise" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum"
 search: true
+search_provider: algolia
 
 
 # Archives

@@ -1,6 +1,9 @@
 language: ruby
 rvm:
   - 2.5
+cache: bundler
+before_install:
+  - gem install bundler
 script:
   - bundle exec jekyll build
   - bundle exec jekyll algolia
