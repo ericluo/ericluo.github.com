@@ -2,6 +2,7 @@
 title: Windows配置
 tags: sa Windows
 permalink: /docs/windows/
+toc: true
 ---
 
 Windows上进行软件开发一直都是种种坑，但是现在的办公环境只能是在Windows下。因此，再苦再难也要克服啊！本文专治Windows平台上的不服，着力打造一个顺手的研究和学习环境。
