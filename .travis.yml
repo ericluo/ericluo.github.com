@@ -1,4 +1,6 @@
 language: ruby
 rvm:
-- 2.5
-script: "bundle exec jekyll build"
+  - 2.5
+script:
+  - bundle exec jekyll build
+  - bundle exec jekyll algolia
