@@ -1,1 +1,1 @@
-[![Build Status](https://www.travis-ci.org/ericluo/ericluo.github.com.svg?branch=master)](https://www.travis-ci.org/ericluo/ericluo.github.com)
+[![Build Status](https://travis-ci.com/ericluo/ericluo.github.com.svg?branch=master)](https://travis-ci.com/ericluo/ericluo.github.com)
