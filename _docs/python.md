@@ -1,8 +1,8 @@
 ---
 tags: Python
+toc: true
 ---
 
-{% include toc %}
 
 ## `_builtins_`
 
