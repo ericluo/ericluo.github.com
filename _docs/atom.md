@@ -2,11 +2,10 @@
 title: atom编辑器设置
 tags: editor sa
 permalink: /docs/atom/
+toc: true
 ---
 
 借着这两天的空闲，将自己日常用的编辑器从`Sublime`切换到了`Atom`，前者基于`Python`的内核，后者基于现代的`Web`技术。前者更新较慢，没有大公司或团队支撑，后者是`Github`出品，且版本更新更为频繁。更重要的是，其使用了基于`Coffeescript`, `Less`的JavaScript和css的成熟技术，以`Chrome`为内核，更具有现代感。在页面展示上效果更佳！特别是在编写`Markdown`的过程中，可以在编辑器内进行展示，太强大了。
-
-{% include toc %}
 
 # 插件安装设置
 
