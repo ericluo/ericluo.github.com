@@ -1,7 +1,7 @@
 ---
 title: Windows配置
 tags: sa Windows
-permalink: /docs/windows/
+permalink: /tech/windows/
 toc: true
 toc_label: '文章大纲'
 ---

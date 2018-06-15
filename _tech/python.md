@@ -1,6 +1,6 @@
 ---
+permalink: /tech/python/
 tags: Python
-toc: true
 ---
 
 

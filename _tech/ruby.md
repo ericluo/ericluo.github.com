@@ -1,5 +1,6 @@
 ---
 tags: ruby
+permalink: /tech/ruby/
 ---
 
 ## ruby安装与环境设置

@@ -1,7 +1,7 @@
 ---
 title: atom编辑器设置
 tags: editor sa
-permalink: /docs/atom/
+permalink: /tech/atom/
 toc: true
 ---
 

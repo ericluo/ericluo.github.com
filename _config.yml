@@ -245,6 +245,9 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path/
+  tech:
+    output: true
+    permalink: /:collection/:path/
 # Defaults
 defaults:
   # _posts
@@ -277,5 +280,19 @@ defaults:
       share: false
       comments: false
       toc: true
+      toc_sticky: true
       sidebar:
         nav: "docs"
+
+  - scope:
+      path: "_tech"
+      type: tech
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      toc: true
+      sidebar:
+        nav: "tech"

@@ -1,5 +1,5 @@
 ---
-permalink: /docs/git/
+permalink: /tech/git/
 tags: git
 ---
 

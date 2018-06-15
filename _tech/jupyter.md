@@ -1,5 +1,5 @@
 ---
-permalink: /docs/jupyter/
+permalink: /tech/jupyter/
 tags: python jupyter
 ---
 

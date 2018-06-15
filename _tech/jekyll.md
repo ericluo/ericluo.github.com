@@ -1,5 +1,6 @@
 ---
 tags: jekyll
+permalink: /tech/jekyll/
 ---
 
 ## 升级`jekyll`
