@@ -54,7 +54,7 @@ tags:
 """
 
 # file extension of posts/drafts
-fileExtension: ".markdown"
+fileExtension: ".md"
 # file slug separator
 slugSeparator: "-"
 
