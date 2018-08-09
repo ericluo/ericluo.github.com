@@ -43,6 +43,8 @@ docs:
     children:
       - title: 投资框架摘录
         url: /docs/invest_system/
+      - title: 个股研究框架
+        url: /docs/stock_research_framework/
       - title: 财报分析框架
         url: /docs/finanice_report_analysis_framework/
       - title: 财报分析笔记
