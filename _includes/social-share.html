@@ -3,7 +3,7 @@
     <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
   {% endif %}
 
-  <a href="http://xueqiu.com/service/share?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}&content={{ page.excerpt | strip_html }}" class="btn btn--xing-square" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} 雪球"><i class="fab fa-fw fa-xing-square" aria-hidden="true"></i><span> 雪球</span></a>
+  <a href="http://xueqiu.com/service/share?url={{ page.url | absolute_url | url_encode }}&title={{ page.title }}&content={{ page.excerpt | strip_html | uri_escape }}" class="btn btn--xing-square" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} 雪球"><i class="fab fa-fw fa-xing-square" aria-hidden="true"></i><span> 雪球</span></a>
 
   <a href="http://service.weibo.com/share/share.php?appkey=&title={{ page.title }}&url={{ page.url | absolute_url }}&pic=&searchPic=false&style=simple" class="btn btn--weibo" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} 雪球" target="_blank"><i class="fab fa-fw fa-weibo" aria-hidden="true"></i><span> 微博</span></a>
 
