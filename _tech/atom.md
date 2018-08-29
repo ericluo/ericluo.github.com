@@ -54,6 +54,7 @@ toc: true
 
 - atom-csv-markdown 将csv格式的数据转换为`Markdown`的表格
 
+- todo-show 按 workspace/project/file 搜索并显示任务标签
 
 # 不同电脑之间配置文件的同步
 
