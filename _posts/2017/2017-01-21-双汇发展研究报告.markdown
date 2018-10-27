@@ -26,27 +26,27 @@ tags: 研究报告 双汇发展
 
 生猪产业链：
 
-![](http://7xonmk.com1.z0.glb.clouddn.com/20170602134142_m.png)
+![](http://netimages.oss-cn-beijing.aliyuncs.com/20170602134142_m.png)
 
 - 猪肉生产
 
   我国猪肉产出占肉类产出比重总体稳定，保持在65%左右(数据来源于龙大肉食的招股说明书)。
 
-  ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-05-12_8-45-25.jpg)
+  ![](http://netimages.oss-cn-beijing.aliyuncs.com/2017-05-12_8-45-25.jpg)
 
 - 猪肉消费
 
   猪肉消费量总体保持稳定，且受饮食文化等因素影响，猪肉消费主要集中在经济发达的南部和东部地区。
 
-  ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-05-12_8-49-23.jpg)
+  ![](http://netimages.oss-cn-beijing.aliyuncs.com/2017-05-12_8-49-23.jpg)
 
 - 市场集中度
 
-  ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-05-12_8-56-39.jpg)
+  ![](http://netimages.oss-cn-beijing.aliyuncs.com/2017-05-12_8-56-39.jpg)
 
 - 利润率水平
 
-  ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-05-12_9-01-06.jpg)
+  ![](http://netimages.oss-cn-beijing.aliyuncs.com/2017-05-12_9-01-06.jpg)
 
 ## 几个基本概念
 
@@ -64,7 +64,7 @@ tags: 研究报告 双汇发展
 
 ## 行业发展前景
 
-![肉类产量](http://7xonmk.com1.z0.glb.clouddn.com/2016-12-30_肉类产量.png)
+![肉类产量](http://netimages.oss-cn-beijing.aliyuncs.com/2016-12-30_肉类产量.png)
 
 |指标      |2016年|2015年  |2014年  |2013年  |2012年  |2011年 |2010年  |2009年  |2008年  |2007年  |2006年  |
 |--------|-----|-------|-------|-------|-------|------|-------|-------|-------|-------|-------|
@@ -97,13 +97,13 @@ tags: 研究报告 双汇发展
 
 ### 生猪价格
 
-![生猪价格指数](http://7xonmk.com1.z0.glb.clouddn.com/生猪价格指数2017-01-21_13-20-30.png)
+![生猪价格指数](http://netimages.oss-cn-beijing.aliyuncs.com/生猪价格指数2017-01-21_13-20-30.png)
 
 **生猪价格在2015年，2016年都是大年（在100以上运行），后面的2017年是否进入下降通道呢？**
 
 ### 猪肉价格
 
-![近一年猪肉价格走势](http://7xonmk.com1.z0.glb.clouddn.com/2017-01-21_11-02-22_猪肉价格走势.png)
+![近一年猪肉价格走势](http://netimages.oss-cn-beijing.aliyuncs.com/2017-01-21_11-02-22_猪肉价格走势.png)
 
 # 公司研究
 
@@ -138,7 +138,7 @@ tags: 研究报告 双汇发展
 > 362.36亿 / 1712.73万 / 18.40元 = 115公斤/头
 > 1400万头 * 0.115吨/头 = 161万吨
 
-![](http://7xonmk.com1.z0.glb.clouddn.com/2017-01-21_11-14-19_温氏股份2016生猪销量.png)
+![](http://netimages.oss-cn-beijing.aliyuncs.com/2017-01-21_11-14-19_温氏股份2016生猪销量.png)
 
 **相对于利润，我觉得现阶段，更应该关注的是市场占有率。在行业不景气，大部分同业微利润甚至是亏损的情况下，能否趁机抢占市场份额，提高市场集中度是关键**
 

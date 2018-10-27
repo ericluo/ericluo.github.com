@@ -234,7 +234,7 @@ plotly.offline.iplot(fig)
 
 **并可以用[参数](http://help.plot.ly/embed-graphs-in-websites/#step-8-customize-the-iframe)来控制图像中的相关元素。**
 
-![](http://7xonmk.com1.z0.glb.clouddn.com/2017-03-04_13-05-47.png)
+![](http://netimages.oss-cn-beijing.aliyuncs.com/2017-03-04_13-05-47.png)
 
 ### traces & layout
 

@@ -15,7 +15,7 @@ tags: pandas plotly python
 
 但是，上述做法有一个弊端。不显示图例的图形中无法图例进行交互控制。如下图所示，可以通过点击某个或某些图例，控制显示的 `trace` 。图中，点击中信银行、浦发银行和兴业银行可以在图形中动态调整是否显示对应的数据。
 
-![](http://7xonmk.com1.z0.glb.clouddn.com/2017-12-03_11-15-05.jpg)
+![](http://netimages.oss-cn-beijing.aliyuncs.com/2017-12-03_11-15-05.jpg)
 
 那么，这是如何做到的呢？在 [plotly官网](https://github.com/plotly/plotly.py/issues/800)上可以找到答案。即可以通过 `showlegend` 和 `legendgroup` 两个参数的搭配来实现。将未显示图例的 `figure` 中的 `trace` 的 `legendgroup` 参数设置为与显示了图例的 `trace` 中对应的 `legendgroup` 设置为一样的即可。
 

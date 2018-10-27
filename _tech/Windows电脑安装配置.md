@@ -84,7 +84,7 @@ Windows上进行软件开发一直都是种种坑，但是现在的办公环境�
 
 ## 通过七牛`URL`来访问图片文件
 
-在blog或文章中可以通过Qiniu的URL (http://7xonmk.com1.z0.glb.clouddn.com/) 来访问同步文件夹中对应的图片文件了。
+在blog或文章中可以通过Qiniu的URL (http://netimages.oss-cn-beijing.aliyuncs.com/) 来访问同步文件夹中对应的图片文件了。
 
 ## 使用说明
 
