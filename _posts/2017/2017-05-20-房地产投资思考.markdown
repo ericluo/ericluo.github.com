@@ -11,15 +11,15 @@ categories: 投资
 
 - 金地集团
 
-  ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-05-21_8-19-01.png)
+  ![](http://netimages.oss-cn-beijing.aliyuncs.com/2017-05-21_8-19-01.png)
 
 - 万科
 
-  ![](http://7xonmk.com1.z0.glb.clouddn.com/2017-05-21_8-21-15.png)
+  ![](http://netimages.oss-cn-beijing.aliyuncs.com/2017-05-21_8-21-15.png)
 
 ## 2016年底土地储备情况
 
-![](http://7xonmk.com1.z0.glb.clouddn.com/上市房企2016年底土地储备情况.jpg)
+![](http://netimages.oss-cn-beijing.aliyuncs.com/上市房企2016年底土地储备情况.jpg)
 
 从上图中可以看出，2016年，中国恒大和融创中国是两家拿地最激进的房企，碧桂园、新城控股其次，万科、保利、华润等比较稳健，新增土地储备基本上与2016年销售额相当，至于其他的房企，如绿地、金地、绿城、招商蛇口等房企拿地规模与当前销售额相比比较小。
 
@@ -48,7 +48,7 @@ categories: 投资
 
 - 主要房地产企业估值
 
-  ![](http://7xonmk.com1.z0.glb.clouddn.com/主要房地产企业估值.png)
+  ![](http://netimages.oss-cn-beijing.aliyuncs.com/主要房地产企业估值.png)
 
 
 ## 参考资料

@@ -24,7 +24,7 @@ siteDraftsDir: "_drafts/"
 sitePostsDir: "_posts/{year}/"
 # directory to images from siteLocalDir
 # e.g. to use the current filename directory, can use {directory}
-siteImagesDir: "http://7xonmk.com1.z0.glb.clouddn.com/"
+siteImagesDir: "http://netimages.oss-cn-beijing.aliyuncs.com/"
 
 # URLs to tags/posts/categories JSON files
 # https://github.com/zhuochun/md-writer/wiki/Settings-for-Front-Matters
