@@ -93,17 +93,17 @@ tags: editor
 
 ### Ex Commands
 
-| Keystrokes                                    | Effect                                                                          |
-|-----------------------------------------------|---------------------------------------------------------------------------------|
-| :[range]delete [x]                            | delete lines into register x                                                    |
-| :[range]yank [x]                              | yank specified lines [into register x]                                          |
-| :[line]put [x]                                | put the text from register x after the specified line                           |
-| :[range]copy {address}                        | copy specified lines to below the line specified by {address}                   |
-| :[range]move {address}                        | move specified lines to below the line specified by {address}                   |
-| :[range]join                                  | join the specified lines                                                        |
-| :[range]normal {commands}                     | execute Normal mode {commands} with {string} on each specified line             |
-| :[range]substitute/{pattern}/{string}/[flags] | replace occurrences of {pattern} with {string} on each specified line           |
-| :[range]global/{pattern}/[cmd]                | execute the Ex command [cmd] on all specified lines where the {pattern} matches |
+| Keystrokes                             | Effect                                                                          |
+| -------------------------------------- | ------------------------------------------------------------------------------- |
+| :[range]delete [x]                     | delete lines into register x                                                    |
+| :[range]yank [x]                       | yank specified lines [into register x]                                          |
+| :[line]put [x]                         | put the text from register x after the specified line                           |
+| :[range]copy {address}                 | copy specified lines to below the line specified by {address}                   |
+| :[range]move {address}                 | move specified lines to below the line specified by {address}                   |
+| :[range]join                           | join the specified lines                                                        |
+| :[range]normal {commands}              | execute Normal mode {commands} with {string} on each specified line             |
+| :[range]sub/{pattern}/{string}/[flags] | replace occurrences of {pattern} with {string} on each specified line           |
+| :[range]global/{pattern}/[cmd]         | execute the Ex command [cmd] on all specified lines where the {pattern} matches |
 
 使用 `q:` 可以进入 `Command line window` 模式。
 
