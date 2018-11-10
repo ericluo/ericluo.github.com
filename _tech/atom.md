@@ -58,6 +58,8 @@ toc: true
 
 - todo-show 按 workspace/project/file 搜索并显示任务标签
 
+- atomic-chrome 和 markdown-here 借助于这两个`Chrome`插件，可以使用`Atom`来写公众号文章，详见<https://segmentfault.com/a/1190000004992970>。
+
 ### 不同电脑之间配置文件的同步(`sync-settings`)
 
 可以通过`sync-settings`来进行不同电脑之间配置文件的同步，其使用了`gist`作为后端存储。因此在系统配置上需要做如下设置：
@@ -98,7 +100,7 @@ toc: true
 | gv                            | 重新选择上次选择的区域                   |
 | coip                          | `o`用于将`cip`的功能转移到`occurrence`上 |
 | change-occurrence-from-search | 将`search`的结果作为`occurrence`         |
-| go                            | 预先设置光标下单词为`occurrence`         | 
+| go                            | 预先设置光标下单词为`occurrence`         |
 | g.                            | 将上次`search`的结果作为`occurrence`     |
 
 #### `preset-occurrence` 和 `persistent-selection`
