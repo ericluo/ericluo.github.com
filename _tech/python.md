@@ -184,6 +184,19 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
     df.style.format({columnlabel: "{:,.2%}"})
 ```
 
+### 如何对 `dataframe` 按行来格式化数据呢？
+
+使用 `dataframe.style.format` 可以用于对 `dataframe` 中的列数据显示格式进行设置，如上节所示，但其无法**按行**设置。
+
+下例中使用 `dataframe.apply` 来对数据格式进行设置（**注意：与前一种方法不同，这里改变了实际的数据，而不仅仅是显示的数据。**)
+
+```python
+  s = df[['营收增幅', '三项费用率', '销售费用率', '管理费用率', '财务费用率']].T
+  percent_formatter = lambda row: ["{:.2%}".format(item) for item in row]
+  idx = pd.IndexSlice['三项费用率':'财务费用率', :]
+  s.loc[idx] = s.loc[idx].apply(percent_formatter, axis=1, result_type='broadcast')
+```
+
 ### 根据余额求单月发生额
 
 假设d1是某个指标的`dataframe`，其中`index`是时间序列，`columns`是对应不同机构的某个指标的余额(`cumsum`),现在需要计算出对应的单月发生额，代码如下：
