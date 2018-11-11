@@ -14,7 +14,7 @@ tags: Python
 | pathlib                   | 3.4                  | 用于替代原来的 `os.path` 等底层操作    |
 | enum                      | 3.4                  | 枚举类型                               |
 | statistics                | 3.4                  | 数值统计函数库                         |
-| formatted string literals | 3.6                  | f'bar {far}'，用于替换 %, format等方法 | 
+| formatted string literals | 3.6                  | f'bar {far}'，用于替换 %, format等方法 |
 
 ## `_builtins_`
 
@@ -27,83 +27,88 @@ tags: Python
     Noteworthy: None is the `nil' object; Ellipsis represents `...' in slices.
 
 - CLASSES
-    object
-        BaseException
-            Exception
-                ArithmeticError
-                Warning
-            GeneratorExit
-            KeyboardInterrupt
-            SystemExit
-        bytearray
-        bytes
-        classmethod
-        complex
-        dict
-        enumerate
-        filter
-        float
-        frozenset
-        int
-            bool
-        list
-        map
-        memoryview
-        property
-        range
-        reversed
-        set
-        slice
-        staticmethod
-        str
-        super
-        tuple
-        type
-        zip
+```python
+object
+BaseException
+    Exception
+        ArithmeticError
+        Warning
+    GeneratorExit
+    KeyboardInterrupt
+    SystemExit
+bytearray
+bytes
+classmethod
+complex
+dict
+enumerate
+filter
+float
+frozenset
+int
+    bool
+list
+map
+memoryview
+property
+range
+reversed
+set
+slice
+staticmethod
+str
+super
+tuple
+type
+zip
+```
 
 - FUNCTIONS
-    __build_class__(...)
-    __import__(...)
-    abs(x, /)
-    all(iterable, /)
-    any(iterable, /)
-    ascii(obj, /)
-    bin(number, /)
-    breakpoint(...)
-    callable(obj, /)
-    chr(i, /)
-    compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)
-    delattr(obj, name, /)
-    dir(...)
-    divmod(x, y, /)
-    eval(source, globals=None, locals=None, /)
-    exec(source, globals=None, locals=None, /)
-    format(value, format_spec='', /)
-    getattr(...)
-    globals()
-    hasattr(obj, name, /)
-    hash(obj, /)
-    hex(number, /)
-    id(obj, /)
-    isinstance(obj, class_or_tuple, /)
-    issubclass(cls, class_or_tuple, /)
-    iter(...)
-    len(obj, /)
-    locals()
-    max(...)
-    min(...)
-    next(...)
-    oct(number, /)
-    open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
-    ord(c, /)
-    pow(x, y, z=None, /)
-    print(...)
-    repr(obj, /)
-    round(number, ndigits=None)
-    setattr(obj, name, value, /)
-    sorted(iterable, /, , key=None, reverse=False)
-    sum(iterable, start=0, /)
-    vars(...)
+
+```python
+__build_class__(...)
+__import__(...)
+abs(x, /)
+all(iterable, /)
+any(iterable, /)
+ascii(obj, /)
+bin(number, /)
+breakpoint(...)
+callable(obj, /)
+chr(i, /)
+compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)
+delattr(obj, name, /)
+dir(...)
+divmod(x, y, /)
+eval(source, globals=None, locals=None, /)
+exec(source, globals=None, locals=None, /)
+format(value, format_spec='', /)
+getattr(...)
+globals()
+hasattr(obj, name, /)
+hash(obj, /)
+hex(number, /)
+id(obj, /)
+isinstance(obj, class_or_tuple, /)
+issubclass(cls, class_or_tuple, /)
+iter(...)
+len(obj, /)
+locals()
+max(...)
+min(...)
+next(...)
+oct(number, /)
+open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+ord(c, /)
+pow(x, y, z=None, /)
+print(...)
+repr(obj, /)
+round(number, ndigits=None)
+setattr(obj, name, value, /)
+sorted(iterable, /, , key=None, reverse=False)
+sum(iterable, start=0, /)
+vars(...)
+```
 
 ### 数据类型 `type`
 
