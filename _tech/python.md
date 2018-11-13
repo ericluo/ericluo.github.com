@@ -3,9 +3,112 @@ permalink: /tech/python/
 tags: Python
 ---
 
+## 升级`Python`版本
+
+在`Windows`下，使用 `conda`来安装和管理`Python`时，使用 `conda install python=3.7.1`来升级`Python`到制定的版本号。
+
+## 更新主要内容
+
+| 库名称                    | 加入标准库时的版本号 | 主要功能                               |
+| ------------------------- | -------------------- | -------------------------------------- |
+| pathlib                   | 3.4                  | 用于替代原来的 `os.path` 等底层操作    |
+| enum                      | 3.4                  | 枚举类型                               |
+| statistics                | 3.4                  | 数值统计函数库                         |
+| formatted string literals | 3.6                  | f'bar {far}'，用于替换 %, format等方法 |
 
 ## `_builtins_`
 
+### Help on built-in module builtins:
+
+- NAME
+    builtins - Built-in functions, exceptions, and other objects.
+
+- DESCRIPTION
+    Noteworthy: None is the `nil' object; Ellipsis represents `...' in slices.
+
+- CLASSES
+```python
+object
+BaseException
+    Exception
+        ArithmeticError
+        Warning
+    GeneratorExit
+    KeyboardInterrupt
+    SystemExit
+bytearray
+bytes
+classmethod
+complex
+dict
+enumerate
+filter
+float
+frozenset
+int
+    bool
+list
+map
+memoryview
+property
+range
+reversed
+set
+slice
+staticmethod
+str
+super
+tuple
+type
+zip
+```
+
+- FUNCTIONS
+
+```python
+__build_class__(...)
+__import__(...)
+abs(x, /)
+all(iterable, /)
+any(iterable, /)
+ascii(obj, /)
+bin(number, /)
+breakpoint(...)
+callable(obj, /)
+chr(i, /)
+compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)
+delattr(obj, name, /)
+dir(...)
+divmod(x, y, /)
+eval(source, globals=None, locals=None, /)
+exec(source, globals=None, locals=None, /)
+format(value, format_spec='', /)
+getattr(...)
+globals()
+hasattr(obj, name, /)
+hash(obj, /)
+hex(number, /)
+id(obj, /)
+isinstance(obj, class_or_tuple, /)
+issubclass(cls, class_or_tuple, /)
+iter(...)
+len(obj, /)
+locals()
+max(...)
+min(...)
+next(...)
+oct(number, /)
+open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+ord(c, /)
+pow(x, y, z=None, /)
+print(...)
+repr(obj, /)
+round(number, ndigits=None)
+setattr(obj, name, value, /)
+sorted(iterable, /, , key=None, reverse=False)
+sum(iterable, start=0, /)
+vars(...)
+```
 
 ### 数据类型 `type`
 
@@ -13,6 +116,8 @@ tags: Python
 - classmethod, property, staticmethod, type
 - dict, list, set, frozenset,  range, *slice*, tuple, str
 - enumerate, filter, map, zip
+
+**其中，`str`, `tuple` 是不可修改对象，`dict`,`list` 是可修改对象。**
 
 ### 函数 `function`
 
@@ -180,8 +285,21 @@ d = datetime.datetime.strptime(str(20151231), '%Y%m%d')
 如下面的代码可以设置以保留两位小数，以逗号为千分位字符的百分比格式来显示：
 
 ```python
-    df.style.format("{:,.2%}")
-    df.style.format({columnlabel: "{:,.2%}"})
+df.style.format("{:,.2%}")
+df.style.format({columnlabel: "{:,.2%}"})
+```
+
+### 如何对 `dataframe` 按行来格式化数据呢？
+
+使用 `dataframe.style.format` 可以用于对 `dataframe` 中的列数据显示格式进行设置，如上节所示，但其无法**按行**设置。
+
+下例中使用 `dataframe.apply` 来对数据格式进行设置（**注意：与前一种方法不同，这里改变了实际的数据，而不仅仅是显示的数据。**)
+
+```python
+s = df[['营收增幅', '三项费用率', '销售费用率', '管理费用率', '财务费用率']].T
+percent_formatter = lambda row: ["{:.2%}".format(item) for item in row]
+idx = pd.IndexSlice['三项费用率':'财务费用率', :]
+s.loc[idx] = s.loc[idx].apply(percent_formatter, axis=1, result_type='broadcast')
 ```
 
 ### 根据余额求单月发生额
