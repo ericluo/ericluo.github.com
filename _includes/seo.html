@@ -4,9 +4,7 @@
 {%- endif -%}
 {%- assign seo_url = seo_url | default: site.github.url -%}
 
-{% if site.title_separator %}
-  {% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
-{% endif %}
+{% assign title_separator = site.title_separator | default: '-' | replace: '|', '&#124;' %}
 
 {%- if page.title -%}
   {%- assign seo_title = page.title | append: " " | append: title_separator | append: " " | append: site.title -%}
@@ -128,7 +126,7 @@
 {% if site.og_image %}
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "Organization",
       "url": {{ seo_url | jsonify }},
       "logo": {{ site_og_image | jsonify }}
@@ -139,7 +137,7 @@
 {% if site.social %}
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
       "name": {{ site.social.name | default: site.name | jsonify }},
       "url": {{ seo_url | jsonify }},
