@@ -26,8 +26,17 @@ permalink: /tech/jekyll/
 ### 小技巧
 
 - 在行尾加2个或更多的空格可以添加换行(`<br/>`)
-- 当缩进4个空格无法正确转义代码块中的标签时，可以使用 `raw` 块，参见本文档 `gist` 部分。
+- 当代码块中含有 `{` 标签时，可以使用 `raw` 块，参见本文档 `gist` 部分。
 - 可以通过将从其他软件（如`Jupyter`、`Excel`等数据处理软件）导出`csv`格式的数据拷贝到`Markdown`文档中，并借助于`atom-csv-markdown`插件来方便地将其转换为`html`表格。
+- $ $ inline formula
+- $$ $$ formula code block
+- sub and sup tags for subscript and superscript
+- --- will become an em-dash (like this —)
+- -- will become an en-dash (like this –)
+- ... will become an ellipsis (like this …)
+- << will become a left guillemet (like this «) – an optional following space will become a non-breakable space
+- \>> will become a right guillemet (like this ») – an optional leading space will become a non-breakable space
+- ^ 可以用来将隔离两个 `list`
 
 ## [Liquid](https://shopify.github.io/liquid/)
 
