@@ -53,12 +53,17 @@ permalink: /tech/jekyll/
 接下来，就需要在`markdown`文档中引用刚刚创建的`gist`。
 
 ```liquid
-{% raw % }
-  {% gist ericluo/8a94b03781aaa65941b6978c9b89c578 %}
-{% endraw %}
+  {% raw %}{% gist ericluo/8a94b03781aaa65941b6978c9b89c578 %}{% endraw %}
 ```
 
 ## jekyll应用疑难问题
+
+### 添加具有 `{` 符号的 `code block`
+
+由于 `Jekyll` 对 `code block` 中的 `Liquid filters or tags` 进行处理，因此代码中如果含有 `{` 等符号，需要用 {% raw %} 和 {% endraw %} 进行封装，如上述 `jekyll-gist插件` 部分所示。
+
+>Jekyll processes all Liquid filters in code blocks If you are using a language that contains curly braces, you will likely need to place {% raw %} and  {% endraw %} tags around your code.
+
 
 ### SSL认证
 
