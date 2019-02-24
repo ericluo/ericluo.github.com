@@ -40,6 +40,9 @@ Windows上进行软件开发一直都是种种坑，但是现在的办公环境�
 
 - [悦书PDF阅读器](http://www.yueshupdf.com/)
 
+- ABBYY FineReader 14 OCR识别软件，可以将图片中的表格识别为电子表格。
+
+
 # 编辑器(`Atom`)
 
 编辑器使用`Atom`，安装好编辑器后，首先安装的插件是`sync-settings`，相关的设置可以参考README文件。接下来就可以通过该插件来同步不同计算机之间的个性化设置信息了。
