@@ -57,6 +57,12 @@ Windows上进行软件开发一直都是种种坑，但是现在的办公环境�
 
 下载后，将对于的字体文件拷贝到 `C:\Windows\Fonts` 目录下即可。
 
+## 设置国内镜像代理
+
+```bash
+  apm config set registry http://registry.npm.taobao.org
+```
+
 # Git
 
 ## 下载`Git`的客户端软件
