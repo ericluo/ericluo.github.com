@@ -11,6 +11,7 @@ title: "VSCode Configuration"
 - Python
 - Vim
 - Markdown
+- Emoji
 - markdownlint
 - Prettier
 - vscode-icons
