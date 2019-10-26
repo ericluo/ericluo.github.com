@@ -9,10 +9,11 @@ title: "VSCode Configuration"
 ## 主要插件
 
 - Python
-- Vim
-- Markdown
+- Markdown All in One
 - Emoji
 - markdownlint
+- Calculator
+- GitLens
 - Prettier
 - vscode-icons
 
