@@ -16,6 +16,7 @@ title: "VSCode Configuration"
 - GitLens
 - Prettier
 - vscode-icons
+- scratchpad
 
 ## VIM
 
