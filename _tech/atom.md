@@ -115,7 +115,7 @@ VMP 提供了 `transform-string-by-select-list`，可以用于对选定的字符
 
 ## VMP 中的 `Text Object`
 
-![](https://netimages.oss-cn-beijing.aliyuncs.com/img/20181029173438.png)
+![](https://raw.githubusercontent.com/ericluo/imagebed/master/img/20181029173438.png)
 
 ## 软件更新
 
