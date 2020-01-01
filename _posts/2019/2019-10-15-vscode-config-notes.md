@@ -17,6 +17,17 @@ title: "VSCode Configuration"
 - Prettier
 - vscode-icons
 - scratchpad
+- Excel to markdown table           # copy from excel, paste to markdown table
+
+## 字体设置
+
+在 `vscode` 中，默认配置下英文使用等宽字体，但中文使用宋体。中英文字体不等宽，导致在中英文混排时无法对齐，特别是在 `markdown` 中使用到表格时显示效果很差。
+
+可以通过使用 [`Sarasa Mono`](https://github.com/be5invis/Sarasa-Gothic) 字体来解决这个问题。下载并安装对应简体中文字体(`sarasa-term-sc`)后，在 `Settings` 中进行如下设置即可：
+
+> font-family: 'Sarasa Term SC',Consolas, 'Courier New', monospace
+
+**对应的有 `Sarasa-Mono-Sc` 和 `Sarasa-Term-SC` 两种字体可以安装和设置，会有部分差异。可以根据实际情况进行调整。**
 
 ## VIM
 
