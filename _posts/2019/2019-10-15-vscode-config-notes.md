@@ -27,7 +27,11 @@ title: "VSCode Configuration"
 
 > font-family: 'Sarasa Term SC',Consolas, 'Courier New', monospace
 
-**对应的有 `Sarasa-Mono-Sc` 和 `Sarasa-Term-SC` 两种字体可以安装和设置，会有部分差异。可以根据实际情况进行调整。**
+**对应的有 `Sarasa Mono Sc` 和 `Sarasa Term SC` 两种字体可以安装和设置，会有部分差异。可以根据实际情况进行调整。**
+
+## 键盘快捷键设置
+
+`vscode` 提供了方便的快捷键设置功能。打开快捷键设置界面，在输入栏中输入对应的按键或功能，查询到对应的快捷键设置列表，并对目标快捷键设定进行编辑修订或删除操作。
 
 ## VIM
 
