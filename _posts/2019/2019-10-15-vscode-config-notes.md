@@ -18,6 +18,7 @@ title: "VSCode Configuration"
 - vscode-icons
 - scratchpad
 - Excel to markdown table           # copy from excel, paste to markdown table
+- Picgo                             # upload picture to clound
 
 ## 字体设置
 
@@ -32,6 +33,15 @@ title: "VSCode Configuration"
 ## 键盘快捷键设置
 
 `vscode` 提供了方便的快捷键设置功能。打开快捷键设置界面，在输入栏中输入对应的按键或功能，查询到对应的快捷键设置列表，并对目标快捷键设定进行编辑修订或删除操作。
+
+## Picgo 设置
+
+尝试过多种解决方案后，还是觉得阿里云是目前最成熟的。安装 `Picgo` 插件后，进行如下 4 个参数设置，就可以在 `vscode` 中直接使用快捷键 `Ctrl + Alt + U` 来上传图片到图床（阿里云）上了。
+
+- Access Key ID:
+- Access Key Secret:
+- Area: oss-cn-beijing
+- bucket: netimages
 
 ## VIM
 
