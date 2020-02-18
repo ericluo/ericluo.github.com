@@ -8,6 +8,20 @@ toc_label: '文章大纲'
 
 Windows上进行软件开发一直都是种种坑，但是现在的办公环境只能是在Windows下。因此，再苦再难也要克服啊！本文专治Windows平台上的不服，着力打造一个顺手的研究和学习环境。
 
+## hosts 配置
+
+为了解决GFW的网络域名污染导致特定网站访问缓慢或是无法访问的问题，可以通过设置 `hosts` 文件的方式解决。在电脑单机上或路由器上设置均可。
+
+- `C:\Windows\system32\drivers\etc\hosts`
+
+```conf
+  # Github Start
+  192.30.253.118	gist.github.com
+  192.30.253.112	github.com
+  192.30.253.112	www.github.com
+  # Github End
+```
+
 ## 输入法快捷键设置
 
 在 `windows 10` 上，`Ctrl+Space` 被默认设置为切换输入法，与 `vscode` 和 `Atom` 等编辑器中的快捷键设置冲突了。但更改 `windows` 上的默认快捷键的设置隐藏的比较深。下面简要说说相关方法：
