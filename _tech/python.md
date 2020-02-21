@@ -406,7 +406,61 @@ py.plot(figure, filename='api-docs/reference-graph')
   py.plot(figure)
 ```
 
-其中 `tickformat` 的具体格式参见[`D3`中的相关定义] <https://github.com/d3/d3-format/blob/master/README.md#locale_format>。**注意，其格式不是 `Python` 中的规范，而是 `D3` 的规范。**
+其中 `tickformat` 的具体格式参见[`D3`中的`Number`格式定义](https://github.com/d3/d3-format/blob/master/README.md#locale_format)。如果不是数字，而是日期，格式定义参见[`D3`中的日期格式定义](https://github.com/d3/d3-3.x-api-reference/blob/master/Time-Formatting.md#format)。
+**注意，其格式不是 `Python` 中的规范，而是 `D3` 的规范。**
+
+### 设置 `XAxis` 上日期的显示格式
+
+如果日期数据是 ‘20121231’、‘20131231’ 等日期数据时，使用 `plotly` 生成图形时，默认使用的 `tickvals` 会使用 ‘20130101’、‘20140101’ 等日期，而不是希望的年末数据。可以通过如下设置可指定对应的 `tickvals` 和 `ticktext`。
+
+```python
+  figure = df.iplot(asFigure = True)
+  figure['layout']['xaxis']['tickvals'] = date_list
+  figure['layout']['xaxis']['ticktext'] = formated_date_list
+  cf.iplot(figure)
+```
+
+### 生成静态图片
+
+默认时，`plotly` 生成动态图形，但是在展示时，对渲染引擎如 `notebook` 等有较高要求，不方便在静态页面上进行浏览。实际上， `plotly` 中有多种渲染方法：
+
+```python
+import plotly.io as pio
+pio.renderers
+Renderers configuration
+-----------------------
+    Default renderer: 'notebook_connected'
+    Available renderers:
+        ['plotly_mimetype', 'jupyterlab', 'nteract', 'vscode',
+         'notebook', 'notebook_connected', 'kaggle', 'azure', 'colab',
+         'cocalc', 'databricks', 'json', 'png', 'jpeg', 'jpg', 'svg',
+         'pdf', 'browser', 'firefox', 'chrome', 'chromium', 'iframe',
+         'iframe_connected', 'sphinx_gallery']
+```
+
+其中，`png`, `jpeg`, `jpg`, `svg` 为静态渲染器，可以导出为静态图片。不过该渲染器依赖于 `orca` 库，使用前需要先安装该库。
+
+```bash
+  conda install -c plotly plotly-orca
+```
+
+#### 定制化 `renderer`
+
+```python
+import plotly.io as pio
+png_renderer = pio.renderers["png"]
+png_renderer.width = 500
+png_renderer.height = 500
+
+pio.renderers.default = "png"
+
+import plotly.graph_objects as go
+fig = go.Figure(
+    data=[go.Bar(y=[2, 1, 3])],
+    layout_title_text="A Figure Displayed with the 'png' Renderer"
+)
+fig.show()
+```
 
 ### [cufflinks](https://github.com/santosjorge/cufflinks)
 
