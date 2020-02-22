@@ -9,9 +9,10 @@ title: "VSCode Configuration"
 ## 主要插件
 
 - Python
-- Markdown All in One
-- Emoji
+- ~~Markdown All in One~~ 
+- Markdown Preview Github + Markdown Footnotes + Markdown Math
 - markdownlint
+- Emoji
 - Calculator
 - GitLens
 - Prettier
@@ -19,6 +20,7 @@ title: "VSCode Configuration"
 - scratchpad
 - Excel to markdown table           # copy from excel, paste to markdown table
 - Picgo                             # upload picture to clound
+- TabOut                            # tab key to out of {}, (), "",<>,etc
 
 ## 字体设置
 
