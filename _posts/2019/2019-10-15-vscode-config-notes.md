@@ -38,7 +38,7 @@ title: "VSCode Configuration"
 
 ## Picgo 设置
 
-尝试过多种解决方案后，还是觉得阿里云是目前最成熟的。安装 `Picgo` 插件后，进行如下 4 个参数设置，就可以在 `vscode` 中直接使用快捷键 `Ctrl + Alt + U` 来上传图片到图床（阿里云）上了。
+尝试过多种解决方案后，还是觉得阿里云是目前最成熟的。安装 `Picgo` 插件，将图床设置为阿里云后，进行如下 4 个参数设置，就可以在 `vscode` 中直接使用快捷键 `Ctrl + Alt + U` 来上传图片到图床（阿里云）上了。
 
 - Access Key ID:
 - Access Key Secret:
